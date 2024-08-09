@@ -1,12 +1,29 @@
-- [Getting started]()
+- Getting started
 
-- 01 Database
+  - [Quick start](quickstart.md)
+  - [Writing more pages](more-pages.md)
+  - [Custom navbar](custom-navbar.md)
+  - [Cover page](cover.md)
 
-  - [数据库全景](01_Database/README.md)
-  - [Paper](01_Database/09_paper/README.md)
-  - [Optimizer](01_Database/08_optimizer/README.md)
-  - [Database Books](01_Database/10_books/README.md)
+- Customization
 
-- [02 Redis](02_Redis/README.md)
+  - [Configuration](configuration.md)
+  - [Themes](themes.md)
+  - [List of Plugins](plugins.md)
+  - [Write a Plugin](write-a-plugin.md)
+  - [Markdown configuration](markdown.md)
+  - [Language highlighting](language-highlight.md)
+  - [Emoji](emoji.md)
 
-- 03 Rust
+- Guide
+
+  - [Deploy](deploy.md)
+  - [Helpers](helpers.md)
+  - [Vue compatibility](vue.md)
+  - [CDN](cdn.md)
+  - [Offline Mode (PWA)](pwa.md)
+  - [Server-Side Rendering (SSR)](ssr.md)
+  - [Embed Files](embed-files.md)
+
+- [Awesome docsify](awesome.md)
+- [Changelog](changelog.md)
