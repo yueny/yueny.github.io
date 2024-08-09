@@ -5,43 +5,16 @@
   <title>Wholsy</title>
   <link rel="icon" href="_media/favicon.ico" />
 
-  <meta
-          name="google-site-verification"
-          content="6t0LoIeFksrjF4c9sqUEsVXiQNxLp2hgoqo0KryT-sE"
-  />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta
-          name="keywords"
-          content="doc,docs,documentation,gitbook,creator,generator,github,jekyll,github-pages"
-  />
+  <meta name="keywords" content="doc,docs,documentation,gitbook,creator,generator,github,jekyll,github-pages"/>
   <meta name="description" content="A magical documentation generator." />
-  <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
-  />
-  <link
-          rel="stylesheet"
-          href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
-          title="vue"
-  />
-  <link
-          rel="stylesheet"
-          href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css"
-          title="dark"
-          disabled
-  />
-  <link
-          rel="stylesheet"
-          href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/buble.css"
-          title="buble"
-          disabled
-  />
-  <link
-          rel="stylesheet"
-          href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/pure.css"
-          title="pure"
-          disabled
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" title="vue"/>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css" title="dark" disabled/>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/buble.css" title="buble" disabled/>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/pure.css" title="pure" disabled/>
+
   <style>
     nav.app-nav li ul {
       min-width: 100px;
@@ -55,8 +28,11 @@
 </head>
 
 <body>
+
 <div id="app">Loading ...</div>
+
 <script src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1"></script>
+
 <script>
   // Set html "lang" attribute based on URL
   var lang = location.hash.match(/#\/(de-de|es|ru-ru|zh-cn)\//);
@@ -68,29 +44,24 @@
   // Docsify configuration
   window.$docsify = {
     alias: {
-      '.*?/awesome':
-              'https://raw.githubusercontent.com/docsifyjs/awesome-docsify/master/README.md',
-      '.*?/changelog':
-              'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG.md',
       '/.*/_navbar.md': '/_navbar.md',
       '/es/(.*)':
               'https://raw.githubusercontent.com/docsifyjs/docs-es/master/$1',
-      '/de-de/(.*)':
-              'https://raw.githubusercontent.com/docsifyjs/docs-de/master/$1',
-      '/ru-ru/(.*)':
-              'https://raw.githubusercontent.com/docsifyjs/docs-ru/master/$1',
-      '/zh-cn/(.*)':
-              'https://cdn.jsdelivr.net/gh/docsifyjs/docs-zh@master/$1',
+      '/.*/_sidebar.md': '/_sidebar.md',
     },
     auto2top: true,
     //coverpage: false,
     routerMode: 'hash',
     executeScript: true,
-    loadSidebar: true,
-    loadNavbar: true,
+    loadSidebar: true,  // 默认加载 _sidebar.md，作为侧边栏
+    loadNavbar: true,   // 默认加载 _navbar.md,作为顶部导航栏
     mergeNavbar: true,
     maxLevel: 4,
-    subMaxLevel: 2,
+    subMaxLevel: 3, // 生成目录的最大层级
+    // 入口文件改为 /README.md
+    homepage: 'README.md',
+    // // 文档和仓库根目录下的 README.md 内容一致
+    // homepage: 'https://raw.githubusercontent.com/userName/repoName/master/README.md',
     ga: 'UA-106147152-1',
     matomo: {
       host: '//matomo.thunderwave.de',
