@@ -10,85 +10,77 @@
   <meta name="description" content="A magical documentation generator." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
 
-  <link rel="stylesheet" href="dist/css/style.css" />
+<!--  <link rel="stylesheet" href="https://s.codealy.com/whosly/reset.css" type="text/css">-->
 
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" title="vue"/>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css" title="dark" disabled/>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/buble.css" title="buble" disabled/>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/pure.css" title="pure" disabled/>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" data-style-group="themeable" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"
+        disabled/>
+  <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"/>
+  <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"/>
 
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css" />
+  <link rel="stylesheet" href="dist/css/main.css" />
+
+<!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />-->
+<!--  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css" />-->
+
+  <script src="https://s.codealy.com/whosly/s/js/jQuery/jquery-3.6.0.min.js"></script>
+
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script src="dist/js/site.js"></script>
+  <meta name="referrer" content="same-origin">
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    // gtag('config', 'G-9LYZ7R080K');
+  </script>
 </head>
 
 <body>
 
-<div id="nav">
-  <h3><a href="#">database-pdfs</a></h3>
-
-</div>
-
-<img src="dist/images/head.jpg"
-     style="top: 2%; position: absolute; left: 35%; z-index: -1; height: 100px"
-     alt="logo"/>
+<!--<img src="dist/images/head.jpg"-->
+<!--     style="top: 2%; position: absolute; left: 35%; z-index: -1; height: 100px"-->
+<!--     alt="logo"/>-->
 
 <div id="app">Loading ...</div>
 
-<a href="https://github.com/yueny/database-pdfs" target="_blank" class="github-corner" aria-label="View source on GitHub">
-  <svg
-        width="80" height="80" viewBox="0 0 250 250" style="
-          fill: #151513;
-          color: #fff;
-          position: absolute;
-          top: 0;
-          border: 0;
-          right: 0;
-        " aria-hidden="true">
-  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-  <path
-          d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-          fill="currentColor" style="transform-origin: 130px 106px" class="octo-arm"></path>
-  <path
-          d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-          fill="currentColor" class="octo-body"></path>
-  </svg>
-</a>
+<!--<a href="https://github.com/yueny/database-pdfs" target="_blank" class="github-corner" aria-label="View source on GitHub">-->
+<!--  <svg-->
+<!--        width="80" height="80" viewBox="0 0 250 250" style="-->
+<!--          fill: #151513;-->
+<!--          color: #fff;-->
+<!--          position: absolute;-->
+<!--          top: 0;-->
+<!--          border: 0;-->
+<!--          right: 0;-->
+<!--        " aria-hidden="true">-->
+<!--  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>-->
+<!--  <path-->
+<!--          d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"-->
+<!--          fill="currentColor" style="transform-origin: 130px 106px" class="octo-arm"></path>-->
+<!--  <path-->
+<!--          d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"-->
+<!--          fill="currentColor" class="octo-body"></path>-->
+<!--  </svg>-->
+<!--</a>-->
 
 <script>
   // Set html "lang" attribute based on URL
   var lang = location.hash.match(/#\/(de-de|es|ru-ru|zh-cn)\//);
-
   if (lang) {
     document.documentElement.setAttribute('lang', lang[1]);
   }
 
   // configuration
   window.$docsify = {
-    name: "Database Series",
-    alias: {
-      '/.*/_navbar.md': '/_navbar.md',
-      '/es/(.*)':
-              'https://raw.githubusercontent.com/docsifyjs/docs-es/master/$1',
-      '/.*/_sidebar.md': '/_sidebar.md',
-    },
-    auto2top: true,
-    //coverpage: false,
-    routerMode: 'hash',
-    executeScript: true,
-    loadSidebar: true,  // 默认加载 _sidebar.md，作为侧边栏
-    loadNavbar: true,   // 默认加载 _navbar.md,作为顶部导航栏
-    mergeNavbar: true,
-    maxLevel: 4,
-    subMaxLevel: 3, // 生成目录的最大层级
-    // 入口文件改为 /README.md
-    homepage: 'README.md',
-    // // 文档和仓库根目录下的 README.md 内容一致
-    // homepage: 'https://raw.githubusercontent.com/userName/repoName/master/README.md',
-    // ga: 'UA-106147152-1',
-    matomo: {
-      host: '//matomo.thunderwave.de',
-      id: 6,
-    },
+    // GENERAL
+    // -----------------------------------------------------------------
+    // 文章标题
+    name: '<span>Database Series</span>',
+    // 文档标题点击后跳转的位置（默认window.location.pathname）
     nameLink: {
       '/': '#/',
       '/es/': '#/es/',
@@ -96,24 +88,75 @@
       '/ru-ru/': '#/ru-ru/',
       '/zh-cn/': '#/zh-cn/',
     },
-    repo: 'https://github.com/shines77/docsify-demo/',
+    // 多个封面页，并指定文件名
+    // coverpage: {
+    //   '/': 'cover.md',
+    //   '/zh-cn/': 'cover.md',
+    // },
+    // 入口文件改为 /README.md
+    homepage: 'README.md',
+    // // 文档和仓库根目录下的 README.md 内容一致
+    // homepage: 'https://raw.githubusercontent.com/userName/repoName/master/README.md',
+    repo: 'https://github.com/yueny/database-pdfs',
+    loadSidebar: '_sidebar.md',// 默认加载 _sidebar.md，作为侧边栏
+    // ga: '',
+
+    // NAVIGATION
+    // -----------------------------------------------------------------
+    alias: {
+      '/.*/_navbar.md': '/_navbar.md',
+      '/.*/_sidebar.md': '/_sidebar.md',
+    },
+    auto2top: true,
+    maxLevel: 4,
+    subMaxLevel: 3, // 生成目录的最大层级
+
+    // 外部链接打开方式
+    externalLinkTarget: '_blank', // default: '_blank'
+    // formatUpdated: '{MM}/{DD} {HH}:{mm}',
+    // 设置请求资源的请求头，例如token、缓存等
+    requestHeaders: {
+      'x-token': 'whosly',
+      'cache-control': 'max-age=600',
+    },
+    // routerMode: 'hash',
+    // // 导航栏配置
+    // loadNavbar: true,   // 默认加载 _navbar.md,作为顶部导航栏
+    // mergeNavbar: true,
+
+    // PLUGINS
+    // -----------------------------------------------------------------
+    executeScript: true,
+    // 搜索功能构建
     search: {
-      noData: {
-        '/es/': '¡No hay resultados!',
-        '/de-de/': 'Keine Ergebnisse!',
-        '/ru-ru/': 'Никаких результатов!',
-        '/zh-cn/': '没有结果!',
-        '/': 'No results!',
-      },
-      paths: 'auto',
-      placeholder: {
-        '/es/': 'Buscar',
-        '/de-de/': 'Suche',
-        '/ru-ru/': 'Поиск',
-        '/zh-cn/': '搜索',
-        '/': 'Search',
-      },
-      pathNamespaces: ['/es', '/de-de', '/ru-ru', '/zh-cn'],
+      depth: 3,
+      noData: 'No results!',
+      placeholder: 'Search...'
+    },
+    // search: {
+    //   paths: 'auto',
+    //   noData: {
+    //     '/es/': '¡No hay resultados!',
+    //     '/de-de/': 'Keine Ergebnisse!',
+    //     '/ru-ru/': 'Никаких результатов!',
+    //     '/zh-cn/': '找不到结果!',
+    //     '/': 'No results!',
+    //   },
+    //   placeholder: {
+    //     '/es/': 'Buscar',
+    //     '/de-de/': 'Suche',
+    //     '/ru-ru/': 'Поиск',
+    //     '/zh-cn/': '搜索',
+    //     '/': 'Search',
+    //   },
+    //   pathNamespaces: ['/es', '/de-de', '/ru-ru', '/zh-cn'],
+    //   depth: 3,
+    // },
+    count:{
+      countable:true,
+      fontsize:'0.9em',
+      color:'rgb(90,90,90)',
+      language:'chinese'
     },
     pagination: {
       previousText: '上一篇',
@@ -121,9 +164,9 @@
       crossChapter: true,
       crossChapterText: false,
     },
-    plantuml: {
-      skin: "default",
-    },
+    // plantuml: {
+    //   skin: "default",
+    // },
     toc: {
       scope: ".markdown-section",
       headings: "h1, h2, h3, h4, h5, h6",
@@ -140,73 +183,115 @@
         },
       },
     },
-    vueGlobalOptions: {
-      data: function () {
-        return {
-          count: 0,
-          message: 'Hello, World!',
-          // Fake API response
-          images: [
-            { title: 'Image 1', url: 'https://picsum.photos/150?random=1' },
-            { title: 'Image 2', url: 'https://picsum.photos/150?random=2' },
-            { title: 'Image 3', url: 'https://picsum.photos/150?random=3' },
-          ],
-        };
-      },
-      computed: {
-        timeOfDay: function () {
-          const date = new Date();
-          const hours = date.getHours();
+    // vueGlobalOptions: {
+    //   data: function () {
+    //     return {
+    //       count: 0,
+    //       message: 'Hello, World!',
+    //       // Fake API response
+    //       images: [
+    //         { title: 'Image 1', url: 'https://picsum.photos/150?random=1' },
+    //         { title: 'Image 2', url: 'https://picsum.photos/150?random=2' },
+    //         { title: 'Image 3', url: 'https://picsum.photos/150?random=3' },
+    //       ],
+    //     };
+    //   },
+    //   computed: {
+    //     timeOfDay: function () {
+    //       const date = new Date();
+    //       const hours = date.getHours();
+    //
+    //       if (hours < 12) {
+    //         return 'morning';
+    //       } else if (hours < 18) {
+    //         return 'afternoon';
+    //       } else {
+    //         return 'evening';
+    //       }
+    //     },
+    //   },
+    //   methods: {
+    //     hello: function () {
+    //       alert(this.message);
+    //     },
+    //   },
+    // },
+    // vueMounts: {
+    //   '#counter': {
+    //     data: function () {
+    //       return {
+    //         count: 0,
+    //       };
+    //     },
+    //   },
+    // },
+    plugins: [
+      // Restores initial <title>
+      function persistTitle(hook, vm) {
+        var titleElm = document.querySelector('title');
+        var rootTitle = titleElm && titleElm.textContent;
+        var pageTitlePrefix = window.$docsify.name
+                ? window.$docsify.name + ' - '
+                : '';
 
-          if (hours < 12) {
-            return 'morning';
-          } else if (hours < 18) {
-            return 'afternoon';
-          } else {
-            return 'evening';
-          }
-        },
-      },
-      methods: {
-        hello: function () {
-          alert(this.message);
-        },
-      },
-    },
-    vueMounts: {
-      '#counter': {
-        data: function () {
-          return {
-            count: 0,
-          };
-        },
-      },
-    },
+        if (rootTitle) {
+          hook.doneEach(function () {
+            var currentTitle = titleElm.textContent;
+            var isRoot = !/\/[a-z]/.test(location.hash);
+            var newTitle = isRoot
+                    ? rootTitle
+                    : pageTitlePrefix + currentTitle;
+
+            titleElm.textContent = newTitle;
+          });
+        }
+      }
+    ]
   };
 </script>
+<script src="dist/js/main.js"></script>
 
-<script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
-<!--<script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>-->
+<!-- Docsify current release  -->
+<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
+<!-- 加载搜索插件 -->
+<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+<!-- 图片缩放 -->
+<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+<!-- 字数统计 -->
+<script src="https://unpkg.com/docsify-count/dist/countable.js"></script>
 
-<script src="//unpkg.com/docsify/lib/plugins/external-script.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
-<script src="//unpkg.com/prismjs/components/prism-javascript.min.js"></script>
-<script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
-<script src="//unpkg.com/prismjs/components/prism-go.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-nginx.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script>
+<!-- Plugins -->
+<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-plugin-ethicalads@1"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
+<!-- 一键复制插件 -->
+<script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+<!-- 代码高亮:引入其他语言扩展 -->
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-go.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-http.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-nginx.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1components/prism-python.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-shell-session.min.js"></script>
+<!--<script src="https://unpkg.com/prismjs/components/prism-javascript.min.js"></script>-->
+<!--<script src="https://unpkg.com/prismjs/components/prism-go.min.js"></script>-->
 
-<script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-<script src="//unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
-<!-- <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script> -->
-<script src="//unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+<!--<script src="https://unpkg.com/docsify/lib/plugins/ga.min.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script>-->
+<!--<script src="https://unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>-->
+<!--&lt;!&ndash; <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script> &ndash;&gt;-->
+<!--<script src="https://unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>-->
 
-<script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>-->
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-- Getting started()
+- [Getting started]()
 
 - Database
   - [数据库全景](md/Database/README.md)

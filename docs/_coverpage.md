@@ -1,6 +1,6 @@
-![logo](_media/icon.svg)
+![logo](https://s.codealy.com/favicon.ico)
 
-# docsify <small>4.12.2</small>
+# database_Series <small>4.12.2</small>
 
 > A magical documentation site generator.
 
@@ -8,5 +8,5 @@
 - No statically built html files
 - Multiple themes
 
-[GitHub](https://github.com/docsifyjs/docsify/)
-[Getting Started](#docsify)
+[//]: # ([GitHub]&#40;https://github.com/yueny/database-pdfs&#41;)
+[Getting Started](#database_series)

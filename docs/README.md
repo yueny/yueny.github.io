@@ -21,12 +21,3 @@ And it takes time, a lot of time, to think and practice.   [Database](md/Databas
 
 
 # Linux kernel
- 
-
-
-# About
-
-## Copyright & More | 延伸阅读
-
-笔者所有文章遵循
-[知识共享 署名-非商业性使用-禁止演绎 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)。
