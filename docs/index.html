@@ -10,28 +10,31 @@
   <meta name="description" content="A magical documentation generator." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
 
+  <link rel="stylesheet" href="dist/css/style.css" />
+
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" title="vue"/>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css" title="dark" disabled/>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/buble.css" title="buble" disabled/>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/pure.css" title="pure" disabled/>
 
-  <style>
-    nav.app-nav li ul {
-      min-width: 100px;
-    }
-
-    #carbonads {
-      box-shadow: none !important;
-      width: auto !important;
-    }
-  </style>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css" />
 </head>
 
 <body>
 
+<div id="nav">
+  <h3><a href="#">database-pdfs</a></h3>
+
+</div>
+
+<img src="dist/images/head.jpg"
+     style="top: 2%; position: absolute; left: 35%; z-index: -1; height: 100px"
+     alt="logo"/>
+
 <div id="app">Loading ...</div>
 
-<a href="https://github.com/yueny/database-pdfs" class="github-corner" aria-label="View source on GitHub">
+<a href="https://github.com/yueny/database-pdfs" target="_blank" class="github-corner" aria-label="View source on GitHub">
   <svg
         width="80" height="80" viewBox="0 0 250 250" style="
           fill: #151513;
@@ -50,7 +53,6 @@
           fill="currentColor" class="octo-body"></path>
   </svg>
 </a>
-<!--<script src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1"></script>-->
 
 <script>
   // Set html "lang" attribute based on URL

@@ -1,3 +1,12 @@
+nav.app-nav li ul {
+    min-width: 100px;
+}
+
+#carbonads {
+    box-shadow: none !important;
+    width: auto !important;
+}
+
 .sidebar {
     margin-top: 48px;
 }
