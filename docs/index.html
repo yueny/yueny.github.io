@@ -26,15 +26,17 @@
 <!--  <link rel="stylesheet" data-style-group="themeable"-->
 <!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">-->
 
-  <link rel="stylesheet" href="dist/css/main.css"/>
   <link rel="stylesheet" href="https://s.codealy.com/whosly/s/prism/1.29.0/prism-all-themes-default.mini.css">
+
+  <!-- 新字体 -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster"rel="stylesheet">
 <!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />-->
 <!--  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css" />-->
 
   <script src="https://s.codealy.com/whosly/s/js/jQuery/jquery-3.6.0.min.js"></script>
 
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <script src="dist/js/site.js"></script>
+  <script src="_media/js/site.js"></script>
   <meta name="referrer" content="same-origin">
 
   <script>
@@ -49,7 +51,7 @@
 
 <body>
 
-<img src="dist/images/head.jpg"
+<img src="_media/images/head.jpg"
      style="top: 2%; position: absolute; left: 30%; z-index: -1; height: 100px; width: 50%"
      alt="logo"/>
 
@@ -71,17 +73,15 @@
       '/de-de/': '#/de-de/',
       '/ru-ru/': '#/ru-ru/',
     },
-    // 封面配置文件。多个封面页，并指定文件名
-    coverpage: {
-      '/': 'coverpage.md',
-      '/zh-cn/': 'coverpage.md',
-    },
-    // // 入口文件改
+    // 封面配置
+    coverpage: true,
+    themeColor: '#25798A',
+    // 入口文件改
     homepage: 'README.md',
     // // 文档和仓库根目录下的 README.md 内容一致
     // homepage: 'https://raw.githubusercontent.com/userName/repoName/master/README.md',
     repo: 'https://github.com/yueny/database-pdfs',
-    // loadSidebar: '_sidebar.md',// 默认加载 _sidebar.md，作为侧边栏
+    // 默认加载 _sidebar.md，作为侧边栏
     loadSidebar: true,
 
     // NAVIGATION

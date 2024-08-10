@@ -1,4 +1,4 @@
-# Database_Series <small>1.0.0</small>
+# Database_Series <small>1.0.0.zh</small>
 
 > Comprehensive technical solution documentation 💪.
 
@@ -9,4 +9,8 @@
 [Get Started](README.md)
 [GitHub](https://github.com/yueny/database-pdfs)
 [Twiter](/)
+
+
+<!-- background image -->
+![](_media/images/bg.jpg)
 
