@@ -62,9 +62,13 @@
   window.$docsify = {
     // GENERAL
     // -----------------------------------------------------------------
-    // 文章标题
+    // 侧边栏顶部标题
     name: 'Database Series',
-    // 文档标题点击后跳转的位置（默认window.location.pathname）
+    // 侧边栏。 默认加载 _sidebar.md，作为侧边栏
+    loadSidebar: true,
+    // 侧边栏目录作为内容标题(true)
+    // autoHeader: true,
+    // 侧边栏顶部标题或logo链接。 文档标题点击后跳转的位置（默认window.location.pathname）
     nameLink: {
       '/': '#/',
       '/zh-cn/': '#/zh-cn/',
@@ -75,26 +79,29 @@
     },
     // 封面配置
     coverpage: true,
-    themeColor: '#25798A',
+    // 设置了封面后，开启网站只进入封面（默认封面和首页是一页，可以向下滑动）
+    onlyCover: true,
+    // 样式主颜色
+    themeColor: '#25798A',  // 3F51B5、25798A
     // 入口文件改
     homepage: 'README.md',
-    // // 文档和仓库根目录下的 README.md 内容一致
-    // homepage: 'https://raw.githubusercontent.com/userName/repoName/master/README.md',
+    // 右上角github小部件链接
     repo: 'https://github.com/yueny/database-pdfs',
-    // 默认加载 _sidebar.md，作为侧边栏
-    loadSidebar: true,
 
     // NAVIGATION
     // -----------------------------------------------------------------
+    // 路由映射，固定根目录的文件
     alias: {
       '/.*/_navbar.md': '/_navbar.md',
       '/.*/_sidebar.md': '/_sidebar.md',
     },
-    // 开启标题的锚点
+    // 开启标题的锚点， url变化自动滚动到顶部
     auto2top: true,
     maxLevel: 5,    // 最大支持渲染的标题层级
     subMaxLevel: 3, // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级
 
+    // 内容距离顶部的高度
+    topMargin: 10,
     // 外部链接打开方式
     externalLinkTarget: '_blank', // default: '_blank'
     // formatUpdated: '{MM}/{DD} {HH}:{mm}',
@@ -124,11 +131,11 @@
         '/es/': '¡No hay resultados!',
         '/de-de/': 'Keine Ergebnisse!',
         '/ru-ru/': 'Никаких результатов!',
-        '/': 'No results!',
+        '/': 'No results!!!',
       },
       placeholder: {
         '/zh-cn/': '搜索',
-        '/en-us/': 'Search',
+        '/en-us/': '🔍 Search',
         '/es/': 'Buscar',
         '/de-de/': 'Suche',
         '/ru-ru/': 'Поиск',

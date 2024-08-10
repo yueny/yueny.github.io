@@ -1,3 +1,8 @@
+<!-- 侧边栏logo样式 -->
+.app-name-link > img{
+    width: 50%;
+}
+
 /*.markdown-section iframe[src*='buttons.github.io'] {*/
 /*  margin: 0;*/
 /*}*/
