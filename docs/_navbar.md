@@ -1,2 +1,6 @@
 - Translations
-  - [:uk: English](/)
+  - :cn: 中文简体
+  - :us: 英语
+  - :es: 西班牙语
+  - :de: 德语
+  - :ru: 俄语
