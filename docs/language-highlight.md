@@ -72,3 +72,69 @@ Languang
     - [:es: Español](/es/)
     - [:ru: Русский](/ru-ru/)
 ```
+
+```rust
+/// 注册
+
+mod account;
+mod processor;
+mod state;
+mod error;
+mod transaction;
+mod keypair;
+
+
+/// 整数计算溢出
+fn wrapping_add() {
+    println!("############ wrapping_add ############");
+
+    // u32位无符号整数最大值
+    let a: u32 = 4_294_967_295;
+    let b: u32 = 1;
+    // 使用 wrapping_* 方法在所有模式下都按照补码循环溢出规则处理，如果一个值超过最大值，它会从0开始重新计数。
+    // 返回 0
+    let result_wrapping = a.wrapping_add(b);
+    println!("Original: {}", a);
+    println!("Add 1: {}", b);
+    println!("Wrapping a + b Result: {}", result_wrapping);
+
+    // saturating_* 在整数溢出时返回相应类型的最大值，如果是下溢，则返回最小值。
+    let result_saturating = a.saturating_add(b);
+    // 返回 4294967295
+    println!("Saturating Result: {}", result_saturating);
+
+    // checked_* 返回值为Option，溢出时为 None 值，否则为Some(result)。可以检查操作是否导致了溢出。
+    let result_checked = a.checked_add(b);
+    // 返回 None
+    match result_checked {
+        Some(result) => println!("Checked Result: {}", result),
+        None => println!("Checked Result: Overflow!"),
+    }
+
+    // overflowing_* 返回值为(result, overflowed)，结果值和一个指示是否存在溢出的布尔值
+    let (result_overflowing, overflowed) = a.overflowing_add(b);
+    // 返回 (0, true)
+    if overflowed {
+        println!("Overflowing Result: Overflow!");
+    } else {
+        println!("Overflowing Result: {}", result_overflowing);
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use log::{debug, info};
+    use socala_common::logs_factory::initialization;
+
+    #[test]
+    fn it_works() {
+        // init 日志
+        initialization(Some("../log4rs.yaml"));
+        info!("program lib it_works info");
+        debug!("program lib it_works debug");
+
+        assert_eq!(2 + 2, 4);
+    }
+}
+
+```
