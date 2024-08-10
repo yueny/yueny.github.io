@@ -5,7 +5,7 @@
 I collect these awesome materials here to review them from time to time.
 I think it will be helpful to those who share the same interests as me.
 
-From [whosly/Database-pdf](https://gitee.com/whosly/Database-pdf)
+From [whosly/database-pdfs](https://gitee.com/whosly/database-pdfs)
 
 ![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg) 
 ![](https://parg.co/bDm)
