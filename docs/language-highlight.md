@@ -9,6 +9,8 @@ Docsify uses [Prism](https://prismjs.com) to highlight code blocks in your pages
 
 Support for [additional languages](https://prismjs.com/#supported-languages) is available by loading the language-specific [grammar files](https://cdn.jsdelivr.net/npm/prismjs@1/components/) via CDN:
 
+## HTML
+
 ```html
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
@@ -41,27 +43,6 @@ The above markdown will be rendered as:
 <a href="//docsify.js.org/">Docsify</a>
 ```
 
-```bash
-echo "hello"
-```
-
-```php
-function getAdder(int $x): int 
-{
-    return 123;
-}
-```
-
-## Highlighting Dynamic Content
-Code blocks [dynamically created from javascript](https://docsify.js.org/#/configuration?id=executescript) can be highlighted using the method `Prism.highlightElement` like so:
-
-```javascript
-var code = document.createElement("code");
-code.innerHTML = "console.log('Hello World!')";
-code.setAttribute("class", "lang-javascript");
-Prism.highlightElement(code);
-```
-
 ```html
 Languang
 
@@ -73,6 +54,102 @@ Languang
     - [:ru: Русский](/ru-ru/)
 ```
 
+<!-- prettier-ignore -->
+```html
+<script>
+  window.$docsify = {
+    search: 'auto', // default
+
+    search: [
+      '/',            // => /README.md
+      '/guide',       // => /guide.md
+      '/get-started', // => /get-started.md
+      '/zh-cn/',      // => /zh-cn/README.md
+    ],
+
+    // complete configuration parameters
+    search: {
+      maxAge: 86400000, // Expiration time, the default one day
+      paths: [], // or 'auto'
+      placeholder: 'Type to search',
+
+      // Localization
+      placeholder: {
+        '/zh-cn/': '搜索',
+        '/': 'Type to search',
+      },
+
+      noData: 'No Results!',
+
+      // Localization
+      noData: {
+        '/zh-cn/': '找不到结果',
+        '/': 'No Results',
+      },
+
+      // Headline depth, 1 - 6
+      depth: 2,
+
+      hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+
+      // To avoid search index collision
+      // between multiple websites under the same domain
+      namespace: 'website-1',
+
+      // Use different indexes for path prefixes (namespaces).
+      // NOTE: Only works in 'auto' mode.
+      //
+      // When initialiazing an index, we look for the first path from the sidebar.
+      // If it matches the prefix from the list, we switch to the corresponding index.
+      pathNamespaces: ['/zh-cn', '/ru-ru', '/ru-ru/v1'],
+
+      // You can provide a regexp to match prefixes. In this case,
+      // the matching substring will be used to identify the index
+      pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/,
+    },
+  };
+</script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+```
+
+## BASH
+
+```bash
+echo "hello"
+```
+
+## PHP
+
+```php
+function getAdder(int $x): int 
+{
+    return 123;
+}
+```
+
+## MD
+
+```markdown
+## This is test
+
+<script>
+  console.log(2333)
+</script>
+```
+
+## javascript
+Code blocks [dynamically created from javascript](https://docsify.js.org/#/configuration?id=executescript) can be highlighted using the method `Prism.highlightElement` like so:
+
+```javascript
+var code = document.createElement("code");
+code.innerHTML = "console.log('Hello World!')";
+code.setAttribute("class", "lang-javascript");
+Prism.highlightElement(code);
+```
+
+## C#
+
 The C# code will be highlighted __after__ the rest of this document.
 
 ```csharp
@@ -80,6 +157,8 @@ public class Foo : IBar<int> {
 	public string Baz { get; set; } = "foo";
 }
 ```
+
+## CSS
 
 The CSS code will be highlighted with this document because CSS has already been loaded.
 
@@ -89,7 +168,7 @@ a:hover {
 }
 ```
 
-rust
+## rust
 
 ```rust
 /// 注册
@@ -155,65 +234,4 @@ mod tests {
     }
 }
 
-```
-
-## HTML
-
-<!-- prettier-ignore -->
-```html
-<script>
-  window.$docsify = {
-    search: 'auto', // default
-
-    search: [
-      '/',            // => /README.md
-      '/guide',       // => /guide.md
-      '/get-started', // => /get-started.md
-      '/zh-cn/',      // => /zh-cn/README.md
-    ],
-
-    // complete configuration parameters
-    search: {
-      maxAge: 86400000, // Expiration time, the default one day
-      paths: [], // or 'auto'
-      placeholder: 'Type to search',
-
-      // Localization
-      placeholder: {
-        '/zh-cn/': '搜索',
-        '/': 'Type to search',
-      },
-
-      noData: 'No Results!',
-
-      // Localization
-      noData: {
-        '/zh-cn/': '找不到结果',
-        '/': 'No Results',
-      },
-
-      // Headline depth, 1 - 6
-      depth: 2,
-
-      hideOtherSidebarContent: false, // whether or not to hide other sidebar content
-
-      // To avoid search index collision
-      // between multiple websites under the same domain
-      namespace: 'website-1',
-
-      // Use different indexes for path prefixes (namespaces).
-      // NOTE: Only works in 'auto' mode.
-      //
-      // When initialiazing an index, we look for the first path from the sidebar.
-      // If it matches the prefix from the list, we switch to the corresponding index.
-      pathNamespaces: ['/zh-cn', '/ru-ru', '/ru-ru/v1'],
-
-      // You can provide a regexp to match prefixes. In this case,
-      // the matching substring will be used to identify the index
-      pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/,
-    },
-  };
-</script>
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 ```

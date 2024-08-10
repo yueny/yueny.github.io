@@ -1,6 +1,3 @@
-![logo](https://s.codealy.com/favicon.ico)
-
-
 # Database_Series <small>1.0.0</small>
 
 > Comprehensive technical solution documentation 💪.
