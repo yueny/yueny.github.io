@@ -24,7 +24,7 @@ Redis Cluster 采用数据分片机制，定义了 16384个 Slot槽位，集群�
 
 ![redis_slot_16384](images/redis_slot_16384.jpg)
 
-这个问题，作者给出了回答， 地址如下: https://github.com/antirez/redis/issues/2576。
+这个问题，作者给出了回答， 地址如下: [https://github.com/antirez/redis/issues/2576](https://github.com/antirez/redis/issues/2576)。
 
 The reason is:
 

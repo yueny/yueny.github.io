@@ -9,7 +9,7 @@
 
 - [Redis](md/Redis/README.md)
 
-- Rust
+- [Rust](md/Rust/README.md)
 
 - [About](about.md)
   - [Demo](demo.md)

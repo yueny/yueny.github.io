@@ -1,10 +1,10 @@
-# database_Series <small>1.0.0</small>
+# Database_Series <small>1.0.0</small>
 
-> A database documentation 💪.
+> Comprehensive technical solution documentation 💪.
 
-- Simple and lightweight
-- No statically built html files
-- Multiple themes
+- Concise and refined database knowledge and paper summary
+- Solutions to Problems in Rust Practice and Technology Development
+- Continuous updating
 
 [Get Started](README.md)
 [GitHub](https://github.com/yueny/database-pdfs)
