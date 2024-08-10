@@ -97,7 +97,7 @@
     },
     auto2top: true,
     maxLevel: 5,    // 最大支持渲染的标题层级
-    subMaxLevel: 4, // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级
+    subMaxLevel: 3, // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级
 
     // 外部链接打开方式
     externalLinkTarget: '_blank', // default: '_blank'
@@ -196,15 +196,18 @@
 <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
 <!-- 字数统计 -->
 <script src="https://unpkg.com/docsify-count/dist/countable.js"></script>
+<!-- emoji表情支持 -->
+<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script>
 
 <!-- themeable -->
 <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-ethicalads@1"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
-<!-- 一键复制插件 -->
+
+<!-- 一键复制插件, 在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
 <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+
 <!-- 代码高亮:引入其他语言扩展 -->
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>
@@ -221,7 +224,6 @@
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-rust.min.js"></script>
 
 <script src="https://unpkg.com/docsify/lib/plugins/ga.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script>
 <script src="https://unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
 <!-- <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script> -->
