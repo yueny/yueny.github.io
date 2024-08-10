@@ -73,7 +73,7 @@ Languang
     - [:ru: Русский](/ru-ru/)
 ```
 
-``` rust
+```rust
 /// 注册
 
 mod account;
