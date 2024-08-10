@@ -2,16 +2,16 @@
 
 - Database Global Solicitation Competition
 
-- [Database](md/Database/README.md)
-  - [数据库论文](md/Database/07_paper/README.md)
-  - [数据库书籍](md/Database/10_books/README.md)
-  - [数据库优化](md/Database/08_optimizer/README.md)
+- [Database](md/en-us/Database/README.md)
+  - [paper](md/en-us/Database/07_paper/README.md)
+  - [books](md/en-us/Database/10_books/README.md)
+  - [optimizer](md/en-us/Database/08_optimizer/README.md)
 
-- [Redis](md/Redis/README.md)
+- [Redis](md/en-us/Redis/README.md)
 
-- [Rust](md/Rust/README.md)
+- [Rust](md/en-us/Rust/README.md)
 
-- [About](about.md)
-  - [Demo](demo.md)
-  - [Emoji](emoji.md)
-  - [Language highlighting](language-highlight.md)
+- [About](md/en-us/about.md)
+  - [Demo](md/en-us/demo.md)
+  - [Emoji](md/en-us/emoji.md)
+  - [Language highlighting](md/en-us/language-highlight.md)
