@@ -11,4 +11,6 @@
 - Rust
 
 - [About](about.md)
+  - [Demo](demo.md)
   - [Emoji](emoji.md)
+  - [Language highlighting](language-highlight.md)
