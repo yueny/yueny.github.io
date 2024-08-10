@@ -73,6 +73,24 @@ Languang
     - [:ru: Русский](/ru-ru/)
 ```
 
+The C# code will be highlighted __after__ the rest of this document.
+
+```csharp
+public class Foo : IBar<int> {
+	public string Baz { get; set; } = "foo";
+}
+```
+
+The CSS code will be highlighted with this document because CSS has already been loaded.
+
+```css
+a:hover {
+	color: green !important;
+}
+```
+
+rust
+
 ```rust
 /// 注册
 
