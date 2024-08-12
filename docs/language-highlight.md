@@ -1,11 +1,13 @@
 # Language highlighting
-supports the following languages by default:
+
+Docsify uses [Prism](https://prismjs.com) to highlight code blocks in your pages. Prism supports the following languages by default:
 
 * Markup - `markup`, `html`, `xml`, `svg`, `mathml`, `ssml`, `atom`, `rss`
 * CSS - `css`
 * C-like - `clike`
 * JavaScript - `javascript`, `js`
 
+Support for [additional languages](https://prismjs.com/#supported-languages) is available by loading the language-specific [grammar files](https://cdn.jsdelivr.net/npm/prismjs@1/components/) via CDN:
 
 ## HTML
 
