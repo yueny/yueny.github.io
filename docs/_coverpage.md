@@ -12,4 +12,4 @@
 
 
 <!-- background image -->
-![](_media/images/bg.jpg)
+![](_media/assets/bg.jpg)
