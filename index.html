@@ -51,199 +51,199 @@
 
 <body>
 
-<img src="/_media/assets/head.jpg"
-     style="top: 2%; position: absolute; left: 30%; z-index: -1; height: 100px; width: 50%"
-     alt="logo"/>
+  <img src="/_media/assets/head.jpg"
+       style="top: 2%; position: absolute; left: 30%; z-index: -1; height: 100px; width: 50%"
+       alt="logo"/>
 
-<div data-app id="main">Loading...</div>
+  <div data-app id="main">Loading...</div>
 
-<script>
-  // configuration
-  window.$docsify = {
-    el: '#main',
-    // GENERAL
-    // -----------------------------------------------------------------
-    // 侧边栏顶部标题
-    name: 'Database Series',
-    // 侧边栏。 默认加载 _sidebar.md，作为侧边栏
-    loadSidebar: true,
-    // 侧边栏目录作为内容标题(true)
-    // autoHeader: true,
-    // 侧边栏顶部标题或logo链接。 文档标题点击后跳转的位置（默认window.location.pathname）
-    nameLink: {
-      '/zh-cn/': '#/zh-cn/',
-      '/en-us/': '#/en-us/',
-      '/es/': '#/es/',
-      '/de-de/': '#/de-de/',
-      '/ru-ru/': '#/ru-ru/',
-      '/': '#/en-us/',
-    },
-    // 封面配置
-    coverpage: true,
-    // 设置了封面后，开启网站只进入封面（默认封面和首页是一页，可以向下滑动）
-    onlyCover: true,
-    // 样式主颜色
-    themeColor: '#25798A',  // 3F51B5、25798A
-    // // 入口文件改
-    homepage: 'cn/README.md',
-    // 右上角github小部件链接
-    repo: 'https://github.com/yueny/database-pdfs',
-
-    // NAVIGATION
-    // -----------------------------------------------------------------
-    // // 路由映射，固定根目录的文件
-    // alias: {
-    //   '/.*/_navbar.md': '/_navbar.md',
-    //   '/.*/_sidebar.md': '/_sidebar.md',
-    // },
-    // 开启标题的锚点， url变化自动滚动到顶部
-    auto2top: true,
-    maxLevel: 5,    // 最大支持渲染的标题层级
-    subMaxLevel: 3, // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级
-
-    // 内容距离顶部的高度
-    topMargin: 10,
-    // 外部链接打开方式
-    externalLinkTarget: '_blank', // default: '_blank'
-    formatUpdated: '{MM}/{DD} {HH}:{mm}',
-    // 设置请求资源的请求头，例如token、缓存等
-    requestHeaders: {
-      'x-token': 'whosly',
-      'cache-control': 'max-age=600',
-    },
-    routerMode: 'hash',
-    // 导航栏配置, 默认加载 _navbar.md,作为顶部导航栏
-    loadNavbar: true,
-    // 小屏设备下合并导航栏到侧边栏
-    mergeNavbar: true,
-
-    // PLUGINS
-    // -----------------------------------------------------------------
-    // Execute the script on the page.
-    // Only parses the first script tag (demo). If Vue is detected, this is true by default.
-    executeScript: true,
-    // 搜索功能构建
-    search: {
-      // maxAge: 86400000,// 过期时间，单位毫秒，默认一天
-      paths: 'auto',
-      noData: {
-        '/zh-cn/': '找不到结果!',
-        '/en-us/': 'No results!',
-        '/es/': '¡No hay resultados!',
-        '/de-de/': 'Keine Ergebnisse!',
-        '/ru-ru/': 'Никаких результатов!',
-        '/': 'No results!!!',
+  <script>
+    // configuration
+    window.$docsify = {
+      el: '#main',
+      // GENERAL
+      // -----------------------------------------------------------------
+      // 侧边栏顶部标题
+      name: 'Database Series',
+      // 侧边栏。 默认加载 _sidebar.md，作为侧边栏
+      loadSidebar: true,
+      // 侧边栏目录作为内容标题(true)
+      // autoHeader: true,
+      // 侧边栏顶部标题或logo链接。 文档标题点击后跳转的位置（默认window.location.pathname）
+      nameLink: {
+        '/zh-cn/': '#/zh-cn/',
+        '/en-us/': '#/en-us/',
+        '/es/': '#/es/',
+        '/de-de/': '#/de-de/',
+        '/ru-ru/': '#/ru-ru/',
+        '/': '#/en-us/',
       },
-      placeholder: {
-        '/zh-cn/': '搜索',
-        '/en-us/': '🔍 Search',
-        '/es/': 'Buscar',
-        '/de-de/': 'Suche',
-        '/ru-ru/': 'Поиск',
-        '/': '🔍 Search...',
+      // 封面配置
+      coverpage: true,
+      // 设置了封面后，开启网站只进入封面（默认封面和首页是一页，可以向下滑动）
+      onlyCover: true,
+      // 样式主颜色
+      themeColor: '#25798A',  // 3F51B5、25798A
+      // // 入口文件改
+      homepage: 'cn/README.md',
+      // 右上角github小部件链接
+      repo: 'https://github.com/yueny/database-pdfs',
+
+      // NAVIGATION
+      // -----------------------------------------------------------------
+      // // 路由映射，固定根目录的文件
+      // alias: {
+      //   '/.*/_navbar.md': '/_navbar.md',
+      //   '/.*/_sidebar.md': '/_sidebar.md',
+      // },
+      // 开启标题的锚点， url变化自动滚动到顶部
+      auto2top: true,
+      maxLevel: 5,    // 最大支持渲染的标题层级
+      subMaxLevel: 3, // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级
+
+      // 内容距离顶部的高度
+      topMargin: 10,
+      // 外部链接打开方式
+      externalLinkTarget: '_blank', // default: '_blank'
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      // 设置请求资源的请求头，例如token、缓存等
+      requestHeaders: {
+        'x-token': 'whosly',
+        'cache-control': 'max-age=600',
       },
-      pathNamespaces: ['/zh-cn', '/en-us', '/es', '/de-de', '/ru-ru'],
-      depth: 3,
-      hideOtherSidebarContent: false,
-      namespace: 'Docsify-Guide',
-    },
-    count:{
-      countable:true,
-      fontsize:'0.9em',
-      color:'rgb(90,90,90)',
-      language:'chinese'
-    },
-    pagination: {
-      previousText: '上一篇',
-      nextText: '下一篇',
-      crossChapter: true,
-      crossChapterText: false,
-    },
-    plantuml: {
-      skin: "default",
-    },
-    toc: {
-      scope: ".markdown-section",
-      headings: "h1, h2, h3, h4, h5, h6",
-      title: "Table of Contents",
-    },
-    plugins: [
-      // Restores initial <title>
-      function persistTitle(hook, vm) {
-        var titleElm = document.querySelector('title');
-        var rootTitle = titleElm && titleElm.textContent;
-        var pageTitlePrefix = window.$docsify.name
-                ? window.$docsify.name + ' - '
-                : '';
+      routerMode: 'hash',
+      // 导航栏配置, 默认加载 _navbar.md,作为顶部导航栏
+      loadNavbar: true,
+      // 小屏设备下合并导航栏到侧边栏
+      mergeNavbar: true,
 
-        if (rootTitle) {
-          hook.doneEach(function () {
-            var currentTitle = titleElm.textContent;
-            var isRoot = !/\/[a-z]/.test(location.hash);
-            var newTitle = isRoot
-                    ? rootTitle
-                    : pageTitlePrefix + currentTitle;
+      // PLUGINS
+      // -----------------------------------------------------------------
+      // Execute the script on the page.
+      // Only parses the first script tag (demo). If Vue is detected, this is true by default.
+      executeScript: true,
+      // 搜索功能构建
+      search: {
+        // maxAge: 86400000,// 过期时间，单位毫秒，默认一天
+        paths: 'auto',
+        noData: {
+          '/zh-cn/': '找不到结果!',
+          '/en-us/': 'No results!',
+          '/es/': '¡No hay resultados!',
+          '/de-de/': 'Keine Ergebnisse!',
+          '/ru-ru/': 'Никаких результатов!',
+          '/': 'No results!!!',
+        },
+        placeholder: {
+          '/zh-cn/': '搜索',
+          '/en-us/': '🔍 Search',
+          '/es/': 'Buscar',
+          '/de-de/': 'Suche',
+          '/ru-ru/': 'Поиск',
+          '/': '🔍 Search...',
+        },
+        pathNamespaces: ['/zh-cn', '/en-us', '/es', '/de-de', '/ru-ru'],
+        depth: 3,
+        hideOtherSidebarContent: false,
+        namespace: 'Docsify-Guide',
+      },
+      count:{
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese'
+      },
+      pagination: {
+        previousText: '上一篇',
+        nextText: '下一篇',
+        crossChapter: true,
+        crossChapterText: false,
+      },
+      plantuml: {
+        skin: "default",
+      },
+      toc: {
+        scope: ".markdown-section",
+        headings: "h1, h2, h3, h4, h5, h6",
+        title: "Table of Contents",
+      },
+      plugins: [
+        // Restores initial <title>
+        function persistTitle(hook, vm) {
+          var titleElm = document.querySelector('title');
+          var rootTitle = titleElm && titleElm.textContent;
+          var pageTitlePrefix = window.$docsify.name
+                  ? window.$docsify.name + ' - '
+                  : '';
 
-            titleElm.textContent = newTitle;
-          });
+          if (rootTitle) {
+            hook.doneEach(function () {
+              var currentTitle = titleElm.textContent;
+              var isRoot = !/\/[a-z]/.test(location.hash);
+              var newTitle = isRoot
+                      ? rootTitle
+                      : pageTitlePrefix + currentTitle;
+
+              titleElm.textContent = newTitle;
+            });
+          }
         }
-      }
-    ]
-  };
-</script>
+      ]
+    };
+  </script>
 
-<!-- Docsify current release  -->
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-<!-- 加载搜索插件 -->
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
-<!-- 图片缩放 -->
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
-<!-- 字数统计 -->
-<script src="https://unpkg.com/docsify-count/dist/countable.js"></script>
-<!-- emoji表情支持 -->
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script>
-<!--
-External Script
-If the script on the page is an external one (imports a js file via src attribute), you'll need this plugin to make it work.
- -->
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
+  <!-- Docsify current release  -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <!-- 加载搜索插件 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <!-- 图片缩放 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+  <!-- 字数统计 -->
+  <script src="https://unpkg.com/docsify-count/dist/countable.js"></script>
+  <!-- emoji表情支持 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script>
+  <!--
+  External Script
+  If the script on the page is an external one (imports a js file via src attribute), you'll need this plugin to make it work.
+   -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
 
-<!-- themeable -->
-<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  <!-- themeable -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
 
-<!-- 一键复制插件, 在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
-<script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+  <!-- 一键复制插件, 在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
 
-<!-- 代码高亮:引入其他语言扩展 -->
-<script src="https://s.codealy.com/whosly/s/prism/1.29.0/prism-all-themes-default.mini.js"></script>
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-go.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-http.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-nginx.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1components/prism-python.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-shell-session.min.js"></script>-->
+  <!-- 代码高亮:引入其他语言扩展 -->
+  <script src="https://s.codealy.com/whosly/s/prism/1.29.0/prism-all-themes-default.mini.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-go.min.js"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-http.min.js"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-nginx.min.js"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1components/prism-python.min.js"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-shell-session.min.js"></script>-->
 
-<!-- PWA 离线缓存 -->
-<script>
-  if (typeof navigator.serviceWorker !== 'undefined') {
-    navigator.serviceWorker.register('/_media/js/sw.js')
-  }
-</script>
+  <!-- PWA 离线缓存 -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('/_media/js/sw.js')
+    }
+  </script>
 
-<script src="https://cdn.jsdelivr.net/npm/docsify-plugin-ethicalads@1"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
-<script src="https://unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
-<script src="https://unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-<!-- <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script> -->
-<!--<script src="https://unpkg.com/docsify/lib/plugins/ga.min.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-ethicalads@1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
+  <script src="https://unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  <script src="https://unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!-- <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script> -->
+  <!--<script src="https://unpkg.com/docsify/lib/plugins/ga.min.js"></script>-->
 
 </body>
 </html>
