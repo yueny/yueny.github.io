@@ -1,4 +1,4 @@
-- [Getting started]()
+- [Getting started111]()
 
 - Database Global Solicitation Competition
 
@@ -11,7 +11,7 @@
 
 - [Rust](md/Rust/README.md)
 
-- [About](about.md)
+- [About](md/about.md)
   - [Demo](demo.md)
   - [Emoji](emoji.md)
   - [Language highlighting](language-highlight.md)

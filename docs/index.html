@@ -69,18 +69,17 @@
     nameLink: {
       '/': '#/',
       '/zh-cn/': '#/zh-cn/',
-      '/en-US/': '#/en-US/',
+      '/en-us/': '#/en-US/',
       '/es/': '#/es/',
       '/de-de/': '#/de-de/',
       '/ru-ru/': '#/ru-ru/',
     },
     // 封面配置文件。多个封面页，并指定文件名
     coverpage: {
-      '/': 'coverpage.md',
-      '/zh-cn/': 'coverpage.md',
+      '/': '_coverpage.md',
+      '/zh-cn/': '_coverpage.md',
+      '/en-us/': '_coverpage.md',
     },
-    // // 入口文件改为 /README.md
-    // homepage: 'README.md',
     // // 文档和仓库根目录下的 README.md 内容一致
     // homepage: 'https://raw.githubusercontent.com/userName/repoName/master/README.md',
     repo: 'https://github.com/yueny/database-pdfs',
@@ -123,7 +122,7 @@
       paths: 'auto',
       noData: {
         '/zh-cn/': '找不到结果!',
-        '/en-US/': 'No results!',
+        '/en-us/': 'No results!',
         '/es/': '¡No hay resultados!',
         '/de-de/': 'Keine Ergebnisse!',
         '/ru-ru/': 'Никаких результатов!',
@@ -131,16 +130,16 @@
       },
       placeholder: {
         '/zh-cn/': '搜索',
-        '/en-US/': 'Search',
+        '/en-us/': 'Search',
         '/es/': 'Buscar',
         '/de-de/': 'Suche',
         '/ru-ru/': 'Поиск',
         '/': 'Search...',
       },
-      pathNamespaces: ['/es', '/zh-cn', '/de-de', '/ru-ru'],
+      pathNamespaces: ['/es', '/zh-cn', '/en-us/', '/de-de', '/ru-ru'],
       depth: 3,
       hideOtherSidebarContent: false,
-      namespace: 'Docsify-Guide',
+      namespace: 'whosly-Guide',
     },
     count:{
       countable:true,
