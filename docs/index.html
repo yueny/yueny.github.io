@@ -38,7 +38,7 @@
   <script src="https://s.codealy.com/whosly/s/js/jQuery/jquery-3.6.0.min.js"></script>
 
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <script src="dist/js/site.js"></script>
+  <script src="_media/assets/js/site.js"></script>
   <meta name="referrer" content="same-origin">
 
   <script>
@@ -47,20 +47,19 @@
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-    // gtag('config', 'G-9LYZ7R080K');
+    // gtag('config', 'G-');
   </script>
 </head>
 
 <body>
 
-<img src="dist/images/head.jpg"
+<img src="_media/assets/head.jpg"
      style="top: 2%; position: absolute; left: 30%; z-index: -1; height: 100px; width: 50%"
      alt="logo"/>
 
 <div id="app">Loading ...</div>
 
 <script>
-  // configuration
   window.$docsify = {
     // GENERAL
     // -----------------------------------------------------------------
@@ -79,21 +78,18 @@
     coverpage: {
       '/': 'coverpage.md',
       '/zh-cn/': 'coverpage.md',
+      '/en-US/': 'coverpage.md',
     },
-    // // 入口文件改为 /README.md
-    // homepage: 'README.md',
-    // // 文档和仓库根目录下的 README.md 内容一致
-    // homepage: 'https://raw.githubusercontent.com/userName/repoName/master/README.md',
     repo: 'https://github.com/yueny/database-pdfs',
     loadSidebar: '_sidebar.md',// 默认加载 _sidebar.md，作为侧边栏
     // ga: '',
 
     // NAVIGATION
     // -----------------------------------------------------------------
-    alias: {
-      '/.*/_navbar.md': '/_navbar.md',
-      '/.*/_sidebar.md': '/_sidebar.md',
-    },
+    // alias: {
+    //   '/.*/_navbar.md': '/_navbar.md',
+    //   '/.*/_sidebar.md': '/_sidebar.md',
+    // },
     // Scrolls to the top of the screen when the route is changed.
     auto2top: true,
     maxLevel: 5,    // 最大支持渲染的标题层级
@@ -138,10 +134,10 @@
         '/ru-ru/': 'Поиск',
         '/': 'Search...',
       },
-      pathNamespaces: ['/es', '/zh-cn', '/de-de', '/ru-ru'],
+      pathNamespaces: ['/zh-cn', 'en-US', '/es', '/de-de', '/ru-ru'],
       depth: 3,
       hideOtherSidebarContent: false,
-      namespace: 'Docsify-Guide',
+      namespace: 'whosly-Guide',
     },
     count:{
       countable:true,
@@ -187,7 +183,7 @@
     ]
   };
 </script>
-<script src="dist/js/main.js"></script>
+<!--<script src="dist/js/main.js"></script>-->
 
 <!-- Docsify current release  -->
 <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
