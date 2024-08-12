@@ -17,28 +17,28 @@
   <!-- 主题一 - 默认主题 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <!-- 主题二 - docsify-themeable defaults 主题 -->
-<!--  <link rel="stylesheet" data-style-group="themeable"-->
-<!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"-->
-<!--  />-->
+  <!--  <link rel="stylesheet" data-style-group="themeable"-->
+  <!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"-->
+  <!--  />-->
   <!-- 主题三 - docsify-themeable dark 主题 -->
-<!--  <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: dark)"-->
-<!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"-->
-<!--  />-->
-<!--  <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: light)"-->
-<!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"-->
-<!--  />-->
-<!--  <link rel="stylesheet" href="dist/css/main.css" />-->
-<!--  <link rel="stylesheet" href="dist/css/style.css" />-->
+  <!--  <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: dark)"-->
+  <!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"-->
+  <!--  />-->
+  <!--  <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: light)"-->
+  <!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"-->
+  <!--  />-->
+  <!--  <link rel="stylesheet" href="dist/css/main.css" />-->
+  <!--  <link rel="stylesheet" href="dist/css/style.css" />-->
 
 
   <link rel="stylesheet" href="https://s.codealy.com/whosly/s/prism/1.29.0/prism-all-themes-default.mini.css">
-<!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />-->
-<!--  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css" />-->
+  <!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />-->
+  <!--  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css" />-->
 
   <script src="https://s.codealy.com/whosly/s/js/jQuery/jquery-3.6.0.min.js"></script>
 
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <script src="_media/assets/js/site.js"></script>
+  <script src="dist/js/site.js"></script>
   <meta name="referrer" content="same-origin">
 
   <script>
@@ -47,19 +47,20 @@
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-    // gtag('config', 'G-');
+    // gtag('config', 'G-9LYZ7R080K');
   </script>
 </head>
 
 <body>
 
-<img src="_media/assets/head.jpg"
+<img src="dist/images/head.jpg"
      style="top: 2%; position: absolute; left: 30%; z-index: -1; height: 100px; width: 50%"
      alt="logo"/>
 
 <div id="app">Loading ...</div>
 
 <script>
+  // configuration
   window.$docsify = {
     // GENERAL
     // -----------------------------------------------------------------
@@ -76,10 +77,13 @@
     },
     // 封面配置文件。多个封面页，并指定文件名
     coverpage: {
-      '/': 'coverpage.md',
-      '/zh-cn/': 'coverpage.md',
-      '/en-US/': 'coverpage.md',
+      '/': '_coverpage.md',
+      '/zh-cn/': '_coverpage.md',
     },
+    // // 入口文件改为 /README.md
+    // homepage: 'README.md',
+    // // 文档和仓库根目录下的 README.md 内容一致
+    // homepage: 'https://raw.githubusercontent.com/userName/repoName/master/README.md',
     repo: 'https://github.com/yueny/database-pdfs',
     loadSidebar: '_sidebar.md',// 默认加载 _sidebar.md，作为侧边栏
     // ga: '',
@@ -103,7 +107,6 @@
       'x-token': 'whosly',
       'cache-control': 'max-age=600',
     },
-    routerMode: 'hash',
     // 导航栏配置
     loadNavbar: true,   // 默认加载 _navbar.md,作为顶部导航栏
     // 小屏设备下合并导航栏到侧边栏
@@ -134,10 +137,10 @@
         '/ru-ru/': 'Поиск',
         '/': 'Search...',
       },
-      pathNamespaces: ['/zh-cn', 'en-US', '/es', '/de-de', '/ru-ru'],
+      pathNamespaces: ['/es', '/zh-cn', '/de-de', '/ru-ru'],
       depth: 3,
       hideOtherSidebarContent: false,
-      namespace: 'whosly-Guide',
+      namespace: 'Docsify-Guide',
     },
     count:{
       countable:true,
@@ -183,7 +186,6 @@
     ]
   };
 </script>
-<!--<script src="dist/js/main.js"></script>-->
 
 <!-- Docsify current release  -->
 <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
