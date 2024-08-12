@@ -3,7 +3,7 @@
 - Database Global Solicitation Competition
 
 - [Database](md/Database/README.md)
-  - [paper](/docs/md/Database/07_paper/README.md)
+  - [paper](md/Database/07_paper/README.md)
   - [books](md/Database/10_books/README.md)
   - [optimizer](md/Database/08_optimizer/README.md)
 
