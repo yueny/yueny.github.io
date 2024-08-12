@@ -15,9 +15,9 @@ From [whosly/Database-pdf](https://gitee.com/whosly/Database-pdf)
 Database development is interesting and challenging.
 You can always find interesting things to learn and challenging problems to solve.
 You need to know a lot of things and get them right to build a reliable and high-performance database.
-And it takes time, a lot of time, to think and practice.   [Database](md/Database/README.md)
+And it takes time, a lot of time, to think and practice.   [Database](/zh-cn/Database/README.md)
 
-![image.png](md/Database/images/global.png)
+![image.png](../_media/assets/Database/global.png)
 
 
 # Linux kernel
