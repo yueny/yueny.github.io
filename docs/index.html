@@ -79,6 +79,7 @@
     coverpage: {
       '/': 'coverpage.md',
       '/zh-cn/': 'coverpage.md',
+      '/en-us/': 'coverpage.md',
     },
     // // 入口文件改为 /README.md
     // homepage: 'README.md',
@@ -123,7 +124,7 @@
       paths: 'auto',
       noData: {
         '/zh-cn/': '找不到结果!',
-        '/en-US/': 'No results!',
+        '/en-us/': 'No results!',
         '/es/': '¡No hay resultados!',
         '/de-de/': 'Keine Ergebnisse!',
         '/ru-ru/': 'Никаких результатов!',
@@ -131,13 +132,13 @@
       },
       placeholder: {
         '/zh-cn/': '搜索',
-        '/en-US/': 'Search',
+        '/en-us/': 'Search',
         '/es/': 'Buscar',
         '/de-de/': 'Suche',
         '/ru-ru/': 'Поиск',
         '/': 'Search...',
       },
-      pathNamespaces: ['/es', '/zh-cn', '/de-de', '/ru-ru'],
+      pathNamespaces: ['/es', '/zh-cn', 'en-us', '/de-de', '/ru-ru'],
       depth: 3,
       hideOtherSidebarContent: false,
       namespace: 'Docsify-Guide',
