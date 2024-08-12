@@ -17,23 +17,23 @@
   <!-- 主题一 - 默认主题 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <!-- 主题二 - docsify-themeable defaults 主题 -->
-  <!--  <link rel="stylesheet" data-style-group="themeable"-->
-  <!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"-->
-  <!--  />-->
+<!--  <link rel="stylesheet" data-style-group="themeable"-->
+<!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"-->
+<!--  />-->
   <!-- 主题三 - docsify-themeable dark 主题 -->
-  <!--  <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: dark)"-->
-  <!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"-->
-  <!--  />-->
-  <!--  <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: light)"-->
-  <!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"-->
-  <!--  />-->
-  <!--  <link rel="stylesheet" href="dist/css/main.css" />-->
-  <!--  <link rel="stylesheet" href="dist/css/style.css" />-->
+<!--  <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: dark)"-->
+<!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"-->
+<!--  />-->
+<!--  <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: light)"-->
+<!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"-->
+<!--  />-->
+<!--  <link rel="stylesheet" href="dist/css/main.css" />-->
+<!--  <link rel="stylesheet" href="dist/css/style.css" />-->
 
 
   <link rel="stylesheet" href="https://s.codealy.com/whosly/s/prism/1.29.0/prism-all-themes-default.mini.css">
-  <!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />-->
-  <!--  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css" />-->
+<!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />-->
+<!--  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css" />-->
 
   <script src="https://s.codealy.com/whosly/s/js/jQuery/jquery-3.6.0.min.js"></script>
 
@@ -60,7 +60,6 @@
 <div id="app">Loading ...</div>
 
 <script>
-  // configuration
   window.$docsify = {
     // GENERAL
     // -----------------------------------------------------------------
@@ -79,7 +78,6 @@
     coverpage: {
       '/': 'coverpage.md',
       '/zh-cn/': 'coverpage.md',
-      '/en-us/': 'coverpage.md',
     },
     // // 入口文件改为 /README.md
     // homepage: 'README.md',
@@ -91,10 +89,10 @@
 
     // NAVIGATION
     // -----------------------------------------------------------------
-    // alias: {
-    //   '/.*/_navbar.md': '/_navbar.md',
-    //   '/.*/_sidebar.md': '/_sidebar.md',
-    // },
+    alias: {
+      '/.*/_navbar.md': '/_navbar.md',
+      '/.*/_sidebar.md': '/_sidebar.md',
+    },
     // Scrolls to the top of the screen when the route is changed.
     auto2top: true,
     maxLevel: 5,    // 最大支持渲染的标题层级
@@ -108,6 +106,7 @@
       'x-token': 'whosly',
       'cache-control': 'max-age=600',
     },
+    routerMode: 'hash',
     // 导航栏配置
     loadNavbar: true,   // 默认加载 _navbar.md,作为顶部导航栏
     // 小屏设备下合并导航栏到侧边栏
@@ -124,7 +123,7 @@
       paths: 'auto',
       noData: {
         '/zh-cn/': '找不到结果!',
-        '/en-us/': 'No results!',
+        '/en-US/': 'No results!',
         '/es/': '¡No hay resultados!',
         '/de-de/': 'Keine Ergebnisse!',
         '/ru-ru/': 'Никаких результатов!',
@@ -132,13 +131,13 @@
       },
       placeholder: {
         '/zh-cn/': '搜索',
-        '/en-us/': 'Search',
+        '/en-US/': 'Search',
         '/es/': 'Buscar',
         '/de-de/': 'Suche',
         '/ru-ru/': 'Поиск',
         '/': 'Search...',
       },
-      pathNamespaces: ['/es', '/zh-cn', 'en-us', '/de-de', '/ru-ru'],
+      pathNamespaces: ['/es', '/zh-cn', '/de-de', '/ru-ru'],
       depth: 3,
       hideOtherSidebarContent: false,
       namespace: 'Docsify-Guide',
@@ -187,6 +186,7 @@
     ]
   };
 </script>
+<script src="dist/js/main.js"></script>
 
 <!-- Docsify current release  -->
 <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
