@@ -51,7 +51,7 @@
 
 <body>
 
-  <img src="/_media/assets/head.jpg"
+  <img src="_media/assets/head.jpg"
        style="top: 2%; position: absolute; left: 30%; z-index: -1; height: 100px; width: 50%"
        alt="logo"/>
 
@@ -83,8 +83,8 @@
       onlyCover: true,
       // 样式主颜色
       themeColor: '#25798A',  // 3F51B5、25798A
-      // 入口文件改
-      homepage: '/en-us/README.md',
+      // // 入口文件改
+      // homepage: '/en-us/README.md',
       // 右上角github小部件链接
       repo: 'https://github.com/yueny/database-pdfs',
 
@@ -142,7 +142,8 @@
           '/ru-ru/': 'Поиск',
           '/': '🔍 Search...',
         },
-        pathNamespaces: ['/zh-cn', '/en-us', '/es', '/de-de', '/ru-ru'],
+        pathNamespaces: ['/es', '/zh-cn', '/de-de', '/ru-ru'],
+        // pathNamespaces: ['/zh-cn', '/en-us', '/es', '/de-de', '/ru-ru'],
         depth: 3,
         hideOtherSidebarContent: false,
         namespace: 'Docsify-Guide',
@@ -239,11 +240,11 @@
 
   <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-ethicalads@1"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
+  <!--<script src="https://unpkg.com/docsify/lib/plugins/ga.min.js"></script>-->
   <script src="https://unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
-  <script src="https://unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
   <!-- <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script> -->
-  <!--<script src="https://unpkg.com/docsify/lib/plugins/ga.min.js"></script>-->
+  <script src="https://unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 
 </body>
 </html>
