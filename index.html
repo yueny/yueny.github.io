@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://s.codealy.com/whosly/s/prism/1.29.0/prism-all-themes-default.mini.css">
 
   <!-- 新字体 -->
-  <link href="https://fonts.googleapis.com/css?family=Lobster"rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 <!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />-->
 <!--  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css" />-->
 
@@ -58,7 +58,6 @@
   <div data-app id="main">Loading...</div>
 
   <script>
-    // configuration
     window.$docsify = {
       el: '#main',
       // GENERAL
@@ -69,23 +68,21 @@
       loadSidebar: true,
       // 侧边栏目录作为内容标题(true)
       // autoHeader: true,
-      // 侧边栏顶部标题或logo链接。 文档标题点击后跳转的位置（默认window.location.pathname）
-      nameLink: {
-        '/zh-cn/': '#/zh-cn/',
-        '/en-us/': '#/en-us/',
-        '/es/': '#/es/',
-        '/de-de/': '#/de-de/',
-        '/ru-ru/': '#/ru-ru/',
-        '/': '#/en-us/',
-      },
+      // // 侧边栏顶部标题或logo链接。 文档标题点击后跳转的位置（默认window.location.pathname）
+      // nameLink: {
+      //   '/zh-cn/': '#/zh-cn/',
+      //   '/en-us/': '#/en-us/',
+      //   '/es/': '#/es/',
+      //   '/de-de/': '#/de-de/',
+      //   '/ru-ru/': '#/ru-ru/',
+      //   '/': '#/en-us/',
+      // },
       // 封面配置
       coverpage: true,
       // 设置了封面后，开启网站只进入封面（默认封面和首页是一页，可以向下滑动）
       onlyCover: true,
       // 样式主颜色
       themeColor: '#25798A',  // 3F51B5、25798A
-      // // 入口文件改
-      homepage: 'cn/README.md',
       // 右上角github小部件链接
       repo: 'https://github.com/yueny/database-pdfs',
 
@@ -111,7 +108,6 @@
         'x-token': 'whosly',
         'cache-control': 'max-age=600',
       },
-      routerMode: 'hash',
       // 导航栏配置, 默认加载 _navbar.md,作为顶部导航栏
       loadNavbar: true,
       // 小屏设备下合并导航栏到侧边栏
@@ -159,36 +155,36 @@
         crossChapter: true,
         crossChapterText: false,
       },
-      plantuml: {
-        skin: "default",
-      },
-      toc: {
-        scope: ".markdown-section",
-        headings: "h1, h2, h3, h4, h5, h6",
-        title: "Table of Contents",
-      },
-      plugins: [
-        // Restores initial <title>
-        function persistTitle(hook, vm) {
-          var titleElm = document.querySelector('title');
-          var rootTitle = titleElm && titleElm.textContent;
-          var pageTitlePrefix = window.$docsify.name
-                  ? window.$docsify.name + ' - '
-                  : '';
-
-          if (rootTitle) {
-            hook.doneEach(function () {
-              var currentTitle = titleElm.textContent;
-              var isRoot = !/\/[a-z]/.test(location.hash);
-              var newTitle = isRoot
-                      ? rootTitle
-                      : pageTitlePrefix + currentTitle;
-
-              titleElm.textContent = newTitle;
-            });
-          }
-        }
-      ]
+      // plantuml: {
+      //   skin: "default",
+      // },
+      // toc: {
+      //   scope: ".markdown-section",
+      //   headings: "h1, h2, h3, h4, h5, h6",
+      //   title: "Table of Contents",
+      // },
+      // plugins: [
+      //   // Restores initial <title>
+      //   function persistTitle(hook, vm) {
+      //     var titleElm = document.querySelector('title');
+      //     var rootTitle = titleElm && titleElm.textContent;
+      //     var pageTitlePrefix = window.$docsify.name
+      //             ? window.$docsify.name + ' - '
+      //             : '';
+      //
+      //     if (rootTitle) {
+      //       hook.doneEach(function () {
+      //         var currentTitle = titleElm.textContent;
+      //         var isRoot = !/\/[a-z]/.test(location.hash);
+      //         var newTitle = isRoot
+      //                 ? rootTitle
+      //                 : pageTitlePrefix + currentTitle;
+      //
+      //         titleElm.textContent = newTitle;
+      //       });
+      //     }
+      //   }
+      // ]
     };
   </script>
 
@@ -230,12 +226,12 @@
   <!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1components/prism-python.min.js"></script>-->
   <!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-shell-session.min.js"></script>-->
 
-  <!-- PWA 离线缓存 -->
-  <script>
-    if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('/_media/js/sw.js')
-    }
-  </script>
+<!--  &lt;!&ndash; PWA 离线缓存 &ndash;&gt;-->
+<!--  <script>-->
+<!--    if (typeof navigator.serviceWorker !== 'undefined') {-->
+<!--      navigator.serviceWorker.register('/_media/js/sw.js')-->
+<!--    }-->
+<!--  </script>-->
 
   <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-ethicalads@1"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
