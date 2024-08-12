@@ -9,14 +9,14 @@ and cutting-edge research in the field of data management since 1988.
 
 ## How does a relational database work (2015)
 
-* [How does a relational database work.pdf](/_media/assets/pdf/How does a relational database work.pdf)
+* [How does a relational database work.pdf](pdf/How does a relational database work.pdf)
 
 ## Elements Of Scale: Composing And Scaling Data Platforms
 
 * [Elements Of Scale: Composing And Scaling Data Platforms](http://www.benstopford.com/2015/04/28/elements-of-scale-composing-and-scaling-data-platforms/) (2015)
 
 If you can't open it,
-[look here](/_media/assets/pdf/Elements of Scale Composing and Scaling Data Platforms.pdf)
+[look here](pdf/Elements of Scale Composing and Scaling Data Platforms.pdf)
 
 Today’s data platforms range greatly in complexity. From simple caching layers or polyglotic persistence right through to wholly integrated data pipelines. There are many paths. They go to many different places. In some of these places at least, nice things are found.
 

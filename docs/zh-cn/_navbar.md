@@ -3,5 +3,5 @@
   * [Gitee](https://gitee.com/wholsy)
 
 - Language
-  - [:uk:**English**](/en-us/)
-  - [:cn:中文](/zh-cn/)
+  - [:cn: **中文**](/zh-cn/)
+  - [:uk: English](/en-us/)
