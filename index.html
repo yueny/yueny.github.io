@@ -158,31 +158,9 @@
     //   headings: "h1, h2, h3, h4, h5, h6",
     //   title: "Table of Contents",
     // },
-    plugins: [
-      // Restores initial <title>
-      function persistTitle(hook, vm) {
-        var titleElm = document.querySelector('title');
-        var rootTitle = titleElm && titleElm.textContent;
-        var pageTitlePrefix = window.$docsify.name
-                ? window.$docsify.name + ' - '
-                : '';
-
-        if (rootTitle) {
-          hook.doneEach(function () {
-            var currentTitle = titleElm.textContent;
-            var isRoot = !/\/[a-z]/.test(location.hash);
-            var newTitle = isRoot
-                    ? rootTitle
-                    : pageTitlePrefix + currentTitle;
-
-            titleElm.textContent = newTitle;
-          });
-        }
-      }
-    ]
   };
 </script>
-<script src="_media/js/main.js"></script>
+<!--<script src="_media/js/main.js"></script>-->
 
 <!-- Docsify current release  -->
 <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>

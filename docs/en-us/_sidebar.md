@@ -1,4 +1,4 @@
-- [Getting started](/en-us/)
+- [Getting started22](/en-us/)
 
 - Database Global Solicitation Competition
 
