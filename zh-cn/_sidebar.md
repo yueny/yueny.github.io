@@ -23,3 +23,5 @@
 - [ 不 断 更 新 ]
 	- [开始](/zh-cn/07_promotion/before.md)
 	- [2023-04](/zh-cn/07_promotion/2023-04.md)
+
+- [About](/zh-cn/about.md)
