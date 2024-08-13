@@ -1,236 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>docsify</title>
-    <link rel="icon" href="_media/favicon.ico" />
-    <meta
-      name="google-site-verification"
-      content="6t0LoIeFksrjF4c9sqUEsVXiQNxLp2hgoqo0KryT-sE"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta
-      name="keywords"
-      content="doc,docs,documentation,gitbook,creator,generator,github,jekyll,github-pages"
-    />
-    <meta name="description" content="A magical documentation generator." />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
-      title="vue"
-    />
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css"
-      title="dark"
-      disabled
-    />
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/buble.css"
-      title="buble"
-      disabled
-    />
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/pure.css"
-      title="pure"
-      disabled
-    />
-    <style>
-      nav.app-nav li ul {
-        min-width: 100px;
+<head>
+  <meta charset="UTF-8">
+  <title>docsify文档</title>
+
+  <!-- 解除其他平台的防盗链 -->
+  <meta name="referrer" content="never">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  <link rel="stylesheet" type="text/css" href="style/myStyle.css"/>
+
+  <!-- alert -->
+  <link rel="stylesheet" href="//cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css" type='text/css' media='all' />
+
+</head>
+
+<body background="" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+  <div id="app">Loading...</div>
+  <a class="to-top">Top</a>
+
+  <script>
+    window.$docsify = {
+      el: '#app',
+      name: '编写docsify文档',
+      repo: 'https://github.com/mochazi/docsify-demo',
+      loadNavbar: true, //开启导航栏
+      coverpage: true,  //开启封面
+      loadSidebar: true,//开启侧边栏
+      auto2top: true,   //切换页面自动回到顶部
+      subMaxLevel: 2,   //目录最大级数
+      maxLevel: 4,      //可配置最大支持渲染的标题层级
+      homepage: 'zh-cn/README.md', //设置中文的README.md作为首页
+      
+      //添加搜索功能，中文和英文文档同时搜索
+      search: {
+        paths: 'auto',
+        placeholder: {
+          '/':'🔍 搜索',
+          '/zh-cn/':'🔍 搜索',
+          '/en-us/':'🔍 Type to search'
+        },
+        //如果中文和英文文档都没有内容，则返回
+        noData: {
+          '/':'😒 找不到结果',
+          '/zh-cn/':'😒 找不到结果',
+          '/en-us/':'😒 No Results'
+        },
+  
+        depth: 4,         //搜索标题的最大层级
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+      },//增加搜索框
+
+      footer: {
+        copy: 'Copyright &copy; 2021 💖 </span>',
+        auth: ' <strong>-相依-</strong>',
+        pre: '<hr/>',
+        style: 'text-align: center;',
+      },
+
+      copyCode: {
+          buttonText: 'Copy',
+          errorText: 'Error',
+          successText: 'OK!'
+      },
+
+      'flexible-alerts': {
+        style: 'flat'
       }
+   
+    }
+  </script>
 
-      #carbonads {
-        box-shadow: none !important;
-        width: auto !important;
-      }
-    </style>
-  </head>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 
-  <body>
-    <div id="app">Loading ...</div>
-    <script src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1"></script>
-    <script>
-      // Set html "lang" attribute based on URL
-      var lang = location.hash.match(/#\/(de-de|es|ru-ru|zh-cn)\//);
+  <!-- docsify表情包 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  
+  <!-- 复制代码到剪切板 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
 
-      if (lang) {
-        document.documentElement.setAttribute('lang', lang[1]);
-      }
+  <!-- 搜索功能 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 
-      // Docsify configuration
-      window.$docsify = {
-        alias: {
-          '.*?/awesome':
-            'https://raw.githubusercontent.com/docsifyjs/awesome-docsify/master/README.md',
-          '.*?/changelog':
-            'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG.md',
-          '/.*/_navbar.md': '/_navbar.md',
-          '/es/(.*)':
-            'https://raw.githubusercontent.com/docsifyjs/docs-es/master/$1',
-          '/de-de/(.*)':
-            'https://raw.githubusercontent.com/docsifyjs/docs-de/master/$1',
-          '/ru-ru/(.*)':
-            'https://raw.githubusercontent.com/docsifyjs/docs-ru/master/$1',
-          '/zh-cn/(.*)':
-            'https://cdn.jsdelivr.net/gh/docsifyjs/docs-zh@master/$1',
-        },
-        auto2top: true,
-        //coverpage: false,
-        routerMode: 'hash',
-        executeScript: true,
-        loadSidebar: true,
-        loadNavbar: true,
-        mergeNavbar: true,
-        maxLevel: 4,
-        subMaxLevel: 2,
-        ga: 'UA-106147152-1',
-        matomo: {
-          host: '//matomo.thunderwave.de',
-          id: 6,
-        },
-        name: 'docsify',
-        nameLink: {
-          '/': '#/',
-          '/es/': '#/es/',
-          '/de-de/': '#/de-de/',
-          '/ru-ru/': '#/ru-ru/',
-          '/zh-cn/': '#/zh-cn/',
-        },
-        repo: 'https://github.com/shines77/docsify-demo/',
-        search: {
-          noData: {
-            '/es/': '¡No hay resultados!',
-            '/de-de/': 'Keine Ergebnisse!',
-            '/ru-ru/': 'Никаких результатов!',
-            '/zh-cn/': '没有结果!',
-            '/': 'No results!',
-          },
-          paths: 'auto',
-          placeholder: {
-            '/es/': 'Buscar',
-            '/de-de/': 'Suche',
-            '/ru-ru/': 'Поиск',
-            '/zh-cn/': '搜索',
-            '/': 'Search',
-          },
-          pathNamespaces: ['/es', '/de-de', '/ru-ru', '/zh-cn'],
-        },
-        pagination: {
-          previousText: '上一篇',
-          nextText: '下一篇',
-          crossChapter: true,
-          crossChapterText: false,
-        },
-        vueComponents: {
-          'button-counter': {
-            template:
-              '<button @click="count += 1">You clicked me {{ count }} times</button>',
-            data: function () {
-              return {
-                count: 0,
-              };
-            },
-          },
-        },
-        vueGlobalOptions: {
-          data: function () {
-            return {
-              count: 0,
-              message: 'Hello, World!',
-              // Fake API response
-              images: [
-                { title: 'Image 1', url: 'https://picsum.photos/150?random=1' },
-                { title: 'Image 2', url: 'https://picsum.photos/150?random=2' },
-                { title: 'Image 3', url: 'https://picsum.photos/150?random=3' },
-              ],
-            };
-          },
-          computed: {
-            timeOfDay: function () {
-              const date = new Date();
-              const hours = date.getHours();
+  <!-- C++、Java、python、bash等等语法高亮 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-cpp.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-c.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-css.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-powershell.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-properties.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-matlab.js"></script>
+  
+  <!-- CDN files for docsify-katex -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  
+  <!-- 文档页脚增强 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-footer-enh/dist/docsify-footer.min.js"></script>
+  
+  <!-- 复制提醒 -->
+  <script src="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.js"></script>
+  <script>
+    document.body.oncopy = function () { 
+      swal("复制成功 🎉", 
+        "若要转载或引用请务必保留原文链接，并申明来源。如果你觉得本仓库不错，那就来 Github 给个 star 吧 😊", 
+        "success"); };
+  </script>
 
-              if (hours < 12) {
-                return 'morning';
-              } else if (hours < 18) {
-                return 'afternoon';
-              } else {
-                return 'evening';
-              }
-            },
-          },
-          methods: {
-            hello: function () {
-              alert(this.message);
-            },
-          },
-        },
-        vueMounts: {
-          '#counter': {
-            data: function () {
-              return {
-                count: 0,
-              };
-            },
-          },
-        },
-        plugins: [
-          DocsifyCarbon.create('CEBI6KQE', 'docsifyjsorg'),
-          function (hook, vm) {
-            hook.beforeEach(function (html) {
-              if (/githubusercontent\.com/.test(vm.route.file)) {
-                url = vm.route.file
-                  .replace('raw.githubusercontent.com', 'github.com')
-                  .replace(/\/master/, '/blob/master');
-              } else if (/jsdelivr\.net/.test(vm.route.file)) {
-                url = vm.route.file
-                  .replace('cdn.jsdelivr.net/gh', 'github.com')
-                  .replace('@master', '/blob/master');
-              } else {
-                url =
-                  'https://github.com/docsifyjs/docsify/blob/develop/docs/' +
-                  vm.route.file;
-              }
-              var editHtml = '[:memo: Edit Document](' + url + ')\n';
-              return (
-                editHtml +
-                html +
-                '\n\n----\n\n' +
-                '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Powered by docsify</a>'
-              );
-            })
-          },
-        ],
-      };
-    </script>
-    <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-nginx.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
-    <script>
-      // Public site only
-      if (/docsify/.test(location.host)) {
-        document.write(
-          '<script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/ga.min.js"><\/script>'
-        );
-        document.write(
-          '<script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/matomo.min.js"><\/script>'
-        );
-      }
-    </script>
-    <script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
-    <!-- <script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script> -->
-  </body>
+  <!-- PWA 离线化 -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+  
+  <!-- 访问量统计 -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            
+
+  <!-- 置顶插件 -->
+  <script src="style/jquery-1.11.3.min.js"></script>
+  <script src="style/jquery.toTop.min.js"></script>
+  <script>
+    $('.to-top').toTop();
+  </script>
+
+  <!-- Markdown 引用样式美化 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts/dist/docsify-plugin-flexible-alerts.min.js"></script>
+
+  <!-- 图片缩放 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.js"></script>
+
+
+</body>
 </html>

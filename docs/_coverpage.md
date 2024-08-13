@@ -1,12 +1,13 @@
-![logo](_media/icon.svg)
+<img width="160px" style="border-radius: 50%" bor src="style/head_portrait.jpg">
 
-# docsify <small>4.12.2</small>
+# **docsify-demo**
 
-> A magical documentation site generator.
+- 本文档是作者折腾 ```docsify```以来的学习历程<br>旨在为大家提供一个较完整的docsify框架结构<br>如果本文能为您得到帮助，请给予支持！
 
-- Simple and lightweight
-- No statically built html files
-- Multiple themes
+[![stars](https://badgen.net/github/stars/mochazi/docsify-demo?color=4ab8a1)](https://github.com/mochazi/docsify-demo)
+[![forks](https://badgen.net/github/forks/mochazi/docsify-demo?color=4ab8a1)](https://github.com/mochazi/docsify-demo)
+![](https://img.shields.io/badge/%E6%91%B8%E9%B1%BC-%E7%A8%8B%E5%BA%8F%E5%91%98-green)
 
-[GitHub](https://github.com/docsifyjs/docsify/)
-[Getting Started](#docsify)
+[GitHub](https://github.com/mochazi/docsify-demo)
+[开始阅读](?id=中文文档)
+
