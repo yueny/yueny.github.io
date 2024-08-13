@@ -11,5 +11,5 @@
 [Twiter](/)
 
 
-<!-- background image -->
-![](/_media/assets/bg.jpg)
+
+![](/_media/bg.jpg)

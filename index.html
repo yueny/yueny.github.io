@@ -38,7 +38,7 @@
   <script src="https://s.codealy.com/whosly/s/js/jQuery/jquery-3.6.0.min.js"></script>
 
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <script src="_media/js/site.js"></script>
+  <script src="/_media/js/site.js"></script>
   <meta name="referrer" content="same-origin">
 
   <script>
@@ -53,7 +53,7 @@
 
 <body>
 
-<img src="_media/assets/head.jpg"
+<img src="/_media/head.jpg"
      style="top: 2%; position: absolute; left: 30%; z-index: -1; height: 100px; width: 50%"
      alt="logo"/>
 
@@ -65,36 +65,19 @@
     // -----------------------------------------------------------------
     // 文章标题
     name: 'Database Series',
-    // // 文档标题点击后跳转的位置（默认window.location.pathname）
-    // nameLink: {
-    //   '/': '#/',
-    //   '/zh-cn/': '#/zh-cn/',
-    //   '/en-us/': '#/en-US/',
-    //   '/es/': '#/es/',
-    //   '/de-de/': '#/de-de/',
-    //   '/ru-ru/': '#/ru-ru/',
-    // },
     // 封面配置文件。多个封面页，并指定文件名
     coverpage: true,
     repo: 'https://github.com/yueny/database-pdfs',
     // 默认加载 _sidebar.md，作为侧边栏
     loadSidebar: true,
-    // ga: '',
 
     // NAVIGATION
     // -----------------------------------------------------------------
-    // alias: {
-    //   '/.*/_navbar.md': '/_navbar.md',
-    //   '/.*/_sidebar.md': '/_sidebar.md',
-    // },
     // Scrolls to the top of the screen when the route is changed.
     auto2top: true,
     maxLevel: 5,    // 最大支持渲染的标题层级
     subMaxLevel: 3, // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级
 
-    // 外部链接打开方式
-    externalLinkTarget: '_blank', // default: '_blank'
-    // formatUpdated: '{MM}/{DD} {HH}:{mm}',
     // 设置请求资源的请求头，例如token、缓存等
     requestHeaders: {
       'x-token': 'whosly',
@@ -157,7 +140,6 @@
     // },
   };
 </script>
-<!--<script src="_media/js/main.js"></script>-->
 
 <!-- Docsify current release  -->
 <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
