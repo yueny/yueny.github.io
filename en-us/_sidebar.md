@@ -18,10 +18,6 @@
 	- [2023-04](/en-us/05_understand/2023-04.md)
 	- [2023-04](/en-us/05_understand/2023-04.md)
 
-- [ 1 + 1 > 2 ]
-	- [2023-04](/en-us//06_cooperation/2023-04.md)
-	- [2023-04](/en-us//06_cooperation/2023-04.md)
-
 - [ Constant updating ]
 	- [2023-04](/en-us/07_promotion/2023-04.md)
 	- [2023-04](/en-us/07_promotion/2023-04.md)

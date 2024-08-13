@@ -18,10 +18,6 @@
 	- [开始](/zh-cn/05_understand/before.md)
 	- [2023-04](/zh-cn/05_understand/2023-04.md)
 
-- [ 1 + 1 > 2 ]
-	- [开始](/zh-cn//06_cooperation/before.md)
-	- [2023-04](/zh-cn//06_cooperation/2023-04.md)
-
 - [ 不 断 更 新 ]
 	- [开始](/zh-cn/07_promotion/before.md)
 	- [2023-04](/zh-cn/07_promotion/2023-04.md)
