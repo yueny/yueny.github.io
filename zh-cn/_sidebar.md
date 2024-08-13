@@ -1,11 +1,14 @@
-- [首页](/zh-cn/)
+- [首页](/)
 
-- 数据库全球征集竞赛
+[//]: # (- 数据库全球征集竞赛)
 
-- [数据库](/zh-cn/Database/README.md)
-	- [数据库论文](Database/07_paper/README.md)
+[//]: # ()
+[//]: # (- [数据库]&#40;/zh-cn/Database/README.md&#41;)
 
-- [关于](/zh-cn/about.md)
+[//]: # (	- [数据库论文]&#40;Database/07_paper/README.md&#41;)
+
+[//]: # ()
+[//]: # (- [关于]&#40;/zh-cn/about.md&#41;)
 
 - [ 积 极 主 动 ]
 	- [开始](/zh-cn/01_proactive/before.md)
