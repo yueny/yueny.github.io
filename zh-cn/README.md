@@ -17,7 +17,7 @@ You can always find interesting things to learn and challenging problems to solv
 You need to know a lot of things and get them right to build a reliable and high-performance database.
 And it takes time, a lot of time, to think and practice.   [Database](/zh-cn/Database/README.md)
 
-![image.png](../assets/Database/global.png)
+![image.png](/assets/Database/global.png)
 
 
 # Linux kernel
