@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Wholsy</title>
-  <link rel="icon" href="docs/_media/favicon.ico" />
+  <link rel="icon" href="_media/favicon.ico" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="keywords" content="doc,docs,documentation,gitbook,creator,generator,github,jekyll,github-pages"/>
@@ -81,15 +81,15 @@
       '/en-us/': '_coverpage.md',
     },
     repo: 'https://github.com/yueny/database-pdfs',
-    loadSidebar: '_sidebar.md',// 默认加载 _sidebar.md，作为侧边栏
+    loadSidebar: true,// 默认加载 _sidebar.md，作为侧边栏
     // ga: '',
 
     // NAVIGATION
     // -----------------------------------------------------------------
-    alias: {
-      '/.*/_navbar.md': '/_navbar.md',
-      '/.*/_sidebar.md': '/_sidebar.md',
-    },
+    // alias: {
+    //   '/.*/_navbar.md': '/_navbar.md',
+    //   '/.*/_sidebar.md': '/_sidebar.md',
+    // },
     // Scrolls to the top of the screen when the route is changed.
     auto2top: true,
     maxLevel: 5,    // 最大支持渲染的标题层级
@@ -103,7 +103,6 @@
       'x-token': 'whosly',
       'cache-control': 'max-age=600',
     },
-    routerMode: 'hash',
     // 导航栏配置
     loadNavbar: true,   // 默认加载 _navbar.md,作为顶部导航栏
     // 小屏设备下合并导航栏到侧边栏
