@@ -1,4 +1,4 @@
-# Database_Series <small>1.0.0</small>
+# Database_Series <small>1.0.0</small> En
 
 > Comprehensive technical solution documentation 💪.
 

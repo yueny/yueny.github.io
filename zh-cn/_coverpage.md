@@ -1,4 +1,4 @@
-# Database_Series <small>1.0.0</small>
+# Database_Series <small>1.0.0</small> Zh
 
 > Comprehensive technical solution documentation 💪.
 
@@ -6,7 +6,7 @@
 - Solutions to Problems in Rust Practice and Technology Development
 - Continuous updating
 
-[Get Started](/en-us/README.md)
+[Get Started](/zh-cn/README.md)
 [GitHub](https://github.com/yueny/database-pdfs)
 [Twiter](/)
 

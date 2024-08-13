@@ -57,32 +57,28 @@
      style="top: 2%; position: absolute; left: 30%; z-index: -1; height: 100px; width: 50%"
      alt="logo"/>
 
-<div data-app id="main">Loading...</div>
+<div id="app">Loading ...</div>
 
 <script>
   window.$docsify = {
-    el: '#main',
     // GENERAL
     // -----------------------------------------------------------------
     // 文章标题
     name: 'Database Series',
-    // 文档标题点击后跳转的位置（默认window.location.pathname）
-    nameLink: {
-      '/': '#/',
-      '/zh-cn/': '#/zh-cn/',
-      '/en-us/': '#/en-US/',
-      '/es/': '#/es/',
-      '/de-de/': '#/de-de/',
-      '/ru-ru/': '#/ru-ru/',
-    },
+    // // 文档标题点击后跳转的位置（默认window.location.pathname）
+    // nameLink: {
+    //   '/': '#/',
+    //   '/zh-cn/': '#/zh-cn/',
+    //   '/en-us/': '#/en-US/',
+    //   '/es/': '#/es/',
+    //   '/de-de/': '#/de-de/',
+    //   '/ru-ru/': '#/ru-ru/',
+    // },
     // 封面配置文件。多个封面页，并指定文件名
-    coverpage: {
-      '/': '_coverpage.md',
-      '/zh-cn/': '_coverpage.md',
-      '/en-us/': '_coverpage.md',
-    },
+    coverpage: true,
     repo: 'https://github.com/yueny/database-pdfs',
-    loadSidebar: true,// 默认加载 _sidebar.md，作为侧边栏
+    // 默认加载 _sidebar.md，作为侧边栏
+    loadSidebar: true,
     // ga: '',
 
     // NAVIGATION
