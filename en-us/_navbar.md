@@ -1,7 +1,5 @@
-* :a:
-  * [Github22](https://github.com/yueny)
-  * [Gitee](https://gitee.com/wholsy)
-
+- [Introduction](/en-us/README.md)
 - Language
-  - [:uk:**English**](/en-us/)
-  - [:cn:中文](/zh-cn/)
+    - [**English**](/en-us/)
+    - [简体中文](/zh-cn/)
+

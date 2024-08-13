@@ -1,17 +1,27 @@
-- [Getting started22](/en-us/)
+- [ Proactive ]
+	- [2023-04](/en-us/01_proactive/2023-04.md)
+	- [before](/en-us/01_proactive/before.md)
+	
+- [ results-oriented ]
+	- [2023-04](/en-us/02_target/2023-04.md)
+	- [2023-04](/en-us/02_target/2023-04.md)
 
-- Database Global Solicitation Competition
+- [ priorities come first ]
+	- [2023-04](/en-us/03_Important/2023-04.md)
+	- [2023-04](/en-us/03_Important/2023-04.md)
 
-- [Database](/en-us/Database/README.md)
-  - [paper](/en-us/Database/07_paper/README.md)
-  - [books](/en-us/Database/10_books/README.md)
-  - [optimizer](Database/08_optimizer/README.md)
+- [ Win-win ]
+	- [2023-04](/en-us/04_win-win/2023-04.md)
+	- [2023-04](/en-us/04_win-win/2023-04.md)
 
-- [Redis](/en-us/Redis/README.md)
+- [ Understand others ]
+	- [2023-04](/en-us/05_understand/2023-04.md)
+	- [2023-04](/en-us/05_understand/2023-04.md)
 
-- [Rust](/en-us/Rust/README.md)
+- [ 1 + 1 > 2 ]
+	- [2023-04](/en-us//06_cooperation/2023-04.md)
+	- [2023-04](/en-us//06_cooperation/2023-04.md)
 
-- [About](/en-us/about.md)
-  - [Demo](/en-us/demo.md)
-  - [Emoji](/en-us/emoji.md)
-  - [Language highlighting](/en-us/language-highlight.md)
+- [ Constant updating ]
+	- [2023-04](/en-us/07_promotion/2023-04.md)
+	- [2023-04](/en-us/07_promotion/2023-04.md)

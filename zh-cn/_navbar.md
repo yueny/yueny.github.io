@@ -1,7 +1,4 @@
-* :a:
-  * [Github33](https://github.com/yueny)
-  * [Gitee](https://gitee.com/wholsy)
-
+- [介绍](/zh-cn/README.md)
 - Language
-  - [:cn:**中文**](/zh-cn/)
-  - [:uk:English](/en-us/)
+    - [**简体中文**](/zh-cn/)
+    - [English](/en-us/)

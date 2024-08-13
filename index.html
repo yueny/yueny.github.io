@@ -1,194 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Wholsy</title>
-  <link rel="icon" href="_media/favicon.ico" />
-
+  <meta charset="UTF-8">
+  <title>7 Habit</title>
+  <link rel="icon" href="style/7habit.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="keywords" content="doc,docs,documentation,gitbook,creator,generator,github,jekyll,github-pages"/>
-  <meta name="description" content="A magical documentation generator." />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
-
-  <link rel="stylesheet" href="https://s.codealy.com/whosly/reset.css" type="text/css">
-
-
-  <!-- theme -->
-  <!-- 主题一 - 默认主题 -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <!-- 主题二 - docsify-themeable defaults 主题 -->
-<!--  <link rel="stylesheet" data-style-group="themeable"-->
-<!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"-->
-<!--  />-->
-  <!-- 主题三 - docsify-themeable dark 主题 -->
-<!--  <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: dark)"-->
-<!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"-->
-<!--  />-->
-<!--  <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: light)"-->
-<!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"-->
-<!--  />-->
-<!--  <link rel="stylesheet" href="dist/css/main.css" />-->
-<!--  <link rel="stylesheet" href="dist/css/style.css" />-->
-
-
-  <link rel="stylesheet" href="https://s.codealy.com/whosly/s/prism/1.29.0/prism-all-themes-default.mini.css">
-<!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />-->
-<!--  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css" />-->
-
-  <script src="https://s.codealy.com/whosly/s/js/jQuery/jquery-3.6.0.min.js"></script>
-
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <script src="/_media/js/site.js"></script>
-  <meta name="referrer" content="same-origin">
-
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    // gtag('config', 'G-');
-  </script>
+  <meta name="description" content="William Practice Logs for '7 Habits'">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="keywords" content="7 hatbits, william, Practice Logs">
+  <meta name="description" content="William Practice Logs for '7 Habits'">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="style/docsify-themes-vue.css">
+  <link rel="stylesheet" type="text/css" href="style/myStyle.css" />
+  <script src="style/docsify-copy-code-index.js"></script>
+  <script src="style/docsify-edit-on-github-index.js"></script>
 </head>
 
 <body>
-
-<img src="/_media/head.jpg"
-     style="top: 2%; position: absolute; left: 30%; z-index: -1; height: 100px; width: 50%"
-     alt="logo"/>
-
-<div id="app">Loading ...</div>
-
-<script>
-  window.$docsify = {
-    // GENERAL
-    // -----------------------------------------------------------------
-    // 文章标题
-    name: 'Database Series',
-    // 封面配置文件。多个封面页，并指定文件名
-    coverpage: true,
-    repo: 'https://github.com/yueny/database-pdfs',
-    // 默认加载 _sidebar.md，作为侧边栏
-    loadSidebar: true,
-
-    // NAVIGATION
-    // -----------------------------------------------------------------
-    // Scrolls to the top of the screen when the route is changed.
-    auto2top: true,
-    maxLevel: 5,    // 最大支持渲染的标题层级
-    subMaxLevel: 3, // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级
-
-    // 设置请求资源的请求头，例如token、缓存等
-    requestHeaders: {
-      'x-token': 'whosly',
-      'cache-control': 'max-age=600',
-    },
-    // 导航栏配置
-    loadNavbar: true,   // 默认加载 _navbar.md,作为顶部导航栏
-    // 小屏设备下合并导航栏到侧边栏
-    mergeNavbar: true,
-
-    // PLUGINS
-    // -----------------------------------------------------------------
-    // Execute the script on the page.
-    // Only parses the first script tag (demo). If Vue is detected, this is true by default.
-    executeScript: true,
-    // 搜索功能构建
-    search: {
-      // maxAge: 86400000,// 过期时间，单位毫秒，默认一天
-      paths: 'auto',
-      noData: {
-        '/zh-cn/': '找不到结果!',
-        '/en-us/': 'No results!',
-        '/es/': '¡No hay resultados!',
-        '/de-de/': 'Keine Ergebnisse!',
-        '/ru-ru/': 'Никаких результатов!',
-        '/': 'No results!',
+  <div data-app id="main">Loading...</div>
+  <a class="to-top">Top👆🏻</a>
+  <script>
+    window.$docsify = {
+      el: '#main',
+      // 搜索设置
+      search: {
+        maxAge: 86400000, // 索引有效期，单位毫秒，默认一天
+        paths: 'auto', // 搜索路径
+        // 支持本地化，搜索框提示文字
+        placeholder: {
+          '/': '🔍 Search',
+          'zh-cn/': '🔍 搜索',
+          'en-us/': '🔍 Type to search'
+        },
+        // 支持本地化，无结果提示文字
+        noData: {
+          '/': 'No Results',
+          'zh-cn/': '找不到结果',
+          'en-us/': 'No Results'
+        },
+        // 搜索标题的最大程级, 1 - 6
+        depth: 6
       },
-      placeholder: {
-        '/zh-cn/': '搜索',
-        '/en-us/': 'Search',
-        '/es/': 'Buscar',
-        '/de-de/': 'Suche',
-        '/ru-ru/': 'Поиск',
-        '/': 'Search...',
-      },
-      pathNamespaces: ['/es', '/zh-cn', '/en-us/', '/de-de', '/ru-ru'],
-      depth: 3,
-      hideOtherSidebarContent: false,
-      namespace: 'whosly-Guide',
-    },
-    count:{
-      countable:true,
-      fontsize:'0.9em',
-      color:'rgb(90,90,90)',
-      language:'chinese'
-    },
-    pagination: {
-      previousText: '上一篇',
-      nextText: '下一篇',
-      crossChapter: true,
-      crossChapterText: false,
-    },
-    // plantuml: {
-    //   skin: "default",
-    // },
-    // toc: {
-    //   scope: ".markdown-section",
-    //   headings: "h1, h2, h3, h4, h5, h6",
-    //   title: "Table of Contents",
-    // },
-  };
-</script>
+      //启用封面
+      coverpage: true,
+      //启用顶部导航栏
+      loadNavbar: true,
+      //启用侧边栏
+      loadSidebar: true,
+      //文档名称
+      name: '7 Habit',
+      //开启标题的锚点
+      auto2top: true,
+      //主题颜色
+      themeColor: '#152F5F',
+      // 自生成目录的最大层级（建议配置为2-4）
+      subMaxLevel: 2,
+      //可配置最大支持渲染的标题层级
+      maxLevel: 4,
+      plugins: [
+        //复制代码插件
+        window.DocsifyCopyCodePlugin.init(),
+      ],
+      //页脚配置
+      footer: {
+        copy: 'Copyright &copy; 2023  </span>',
+        auth: ' <strong>-William-</strong>',
+        pre: '<hr/>',
+        style: 'text-align: center;',
+      }
+    }
+  </script>
 
-<!-- Docsify current release  -->
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-<!-- 加载搜索插件 -->
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
-<!-- 图片缩放 -->
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
-<!-- 字数统计 -->
-<script src="https://unpkg.com/docsify-count/dist/countable.js"></script>
-<!-- emoji表情支持 -->
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script>
-<!--
-External Script
-If the script on the page is an external one (imports a js file via src attribute), you'll need this plugin to make it work.
- -->
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
-<!--<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>-->
-
-<!-- themeable -->
-<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsify-plugin-ethicalads@1"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
-
-<!-- 一键复制插件, 在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
-<script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
-
-<!-- 代码高亮:引入其他语言扩展 -->
-<script src="https://s.codealy.com/whosly/s/prism/1.29.0/prism-all-themes-default.mini.js"></script>
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-go.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-http.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-nginx.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1components/prism-python.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-shell-session.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-rust.min.js"></script>-->
-
-
-<script src="https://unpkg.com/docsify/lib/plugins/ga.min.js"></script>
-<script src="https://unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
-<!-- <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script> -->
-<script src="https://unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!-- 复制代码插件 -->
+  <link rel="stylesheet" href="style/docsify-copy-code-style.css">
+  <!-- 加载docsifyJS文件 -->
+  <script src="style/docsify.min.js"></script>
+  <!-- docsify表情包支持 -->
+  <script src="style/emoji.min.js"></script>
+  <!-- 全文搜索 -->
+  <script src="style/search.js"></script>
+  <!-- 分页功能 -->
+  <script src="style/docsify-pagination.min.js"></script>
+  <!-- 文档页脚 -->
+  <script src="style/docsify-footer.min.js"></script>
+  <!-- PWA 离线缓存 -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+  <!-- 置顶插件 -->
+  <script src="style/jquery-1.11.3.min.js"></script>
+  <script src="style/jquery.toTop.min.js"></script>
+  <script>
+    $('.to-top').toTop();
+  </script>
+  <!-- Markdown 引用样式美化 -->
+  <script src="style/docsify-plugin-flexible-alerts.min.js"></script>
+  <!-- 图片缩放 -->
+  <script src="style/zoom-image.js"></script>
 
 </body>
 </html>
