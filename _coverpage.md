@@ -1,4 +1,6 @@
-<img width="160px" style="border-radius: 50%" bor src="/style/hot.jpg">
+![logo](/_media/favicon.ico)
+
+<img width="160px" style="border-radius: 50%" bor src="/_media/hot.jpg">
 
 # Database_Series <small>1.0.0</small>
 
