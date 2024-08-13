@@ -1,6 +1,6 @@
 - [首页](/)
 
-- [ 积 极 主 动 ](/zh-cn/01_proactive/before.md)
+- [积极主动](/zh-cn/proactive/before.md)
 	
 - [ 以 终 为 始 ](/zh-cn/02_target/before.md)
 
