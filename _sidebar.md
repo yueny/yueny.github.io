@@ -7,9 +7,9 @@
   - [books](md/Database/10_books/README.md)
   - [optimizer](md/Database/08_optimizer/README.md)
 
-- [Redis](md/Redis/README.md)
+- [Redis](Redis/README.md)
 
-- [Rust](md/Rust/README.md)
+- [Rust](Rust/README.md)
 
 - [About](about.md)
   - [Demo](demo.md)
