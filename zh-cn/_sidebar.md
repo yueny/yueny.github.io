@@ -1,8 +1,8 @@
 - [首页](/)
 
-- [ 积 极 主 动 ](01_proactive/before.md)
+- [ 积 极 主 动 ](/zh-cn/01_proactive/before.md)
 	
-- [ 以 终 为 始 ](02_target/before.md)
+- [ 以 终 为 始 ](/zh-cn/02_target/before.md)
 
 - [ 要 事 第 一 ](/zh-cn/03_Important/before.md)
 
