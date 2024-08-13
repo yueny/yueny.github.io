@@ -11,7 +11,7 @@
 
 - [Rust](md/Rust/README.md)
 
-- [About](docs/en-us/about.md)
-  - [Demo](docs/en-us/demo.md)
-  - [Emoji](docs/en-us/emoji.md)
-  - [Language highlighting](docs/en-us/language-highlight.md)
+- [About](about.md)
+  - [Demo](demo.md)
+  - [Emoji](emoji.md)
+  - [Language highlighting](language-highlight.md)
