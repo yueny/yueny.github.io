@@ -8,7 +8,7 @@
 - Solutions to Problems in Rust Practice and Technology Development
 - Continuous updating
 
-[Get Started](/en-us/README.md)
+[Get Started](/zh-cn/README.md)
 [GitHub](https://github.com/yueny/database-pdfs)
 [Twiter](/)
 
