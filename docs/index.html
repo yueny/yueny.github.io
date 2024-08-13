@@ -11,6 +11,7 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+
   <link rel="stylesheet" type="text/css" href="style/myStyle.css"/>
 
   <!-- alert -->
@@ -18,8 +19,11 @@
 
 </head>
 
-<body background="" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+<body background=""
+      style="background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+
   <div id="app">Loading...</div>
+
   <a class="to-top">Top</a>
 
   <script>
@@ -34,6 +38,7 @@
       subMaxLevel: 2,   //目录最大级数
       maxLevel: 4,      //可配置最大支持渲染的标题层级
       homepage: 'zh-cn/README.md', //设置中文的README.md作为首页
+      basePath: 'docs/',
       
       //添加搜索功能，中文和英文文档同时搜索
       search: {
@@ -55,8 +60,8 @@
       },//增加搜索框
 
       footer: {
-        copy: 'Copyright &copy; 2021 💖 </span>',
-        auth: ' <strong>-相依-</strong>',
+        copy: 'Copyright &copy; 2024 💖 </span>',
+        auth: ' <strong>-沐沐-</strong>',
         pre: '<hr/>',
         style: 'text-align: center;',
       },
@@ -89,7 +94,7 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-cpp.min.js"></script>
+<!--  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-cpp.min.js"></script>-->
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-c.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-css.min.js"></script>
@@ -128,6 +133,7 @@
   <!-- 置顶插件 -->
   <script src="style/jquery-1.11.3.min.js"></script>
   <script src="style/jquery.toTop.min.js"></script>
+
   <script>
     $('.to-top').toTop();
   </script>
