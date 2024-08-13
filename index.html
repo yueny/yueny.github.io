@@ -20,14 +20,17 @@
 </head>
 
 <body>
-  <div data-app id="main">Loading...</div>
-  <a class="to-top">Top👆🏻</a>
+  <div id="app">Loading ...</div>
+
   <script>
     window.$docsify = {
-      el: '#main',
+      // GENERAL
+      // -----------------------------------------------------------------
+      // 文章标题
+      name: 'Database Series',
+
       // 搜索设置
       search: {
-        maxAge: 86400000, // 索引有效期，单位毫秒，默认一天
         paths: 'auto', // 搜索路径
         // 支持本地化，搜索框提示文字
         placeholder: {
@@ -50,8 +53,6 @@
       loadNavbar: true,
       //启用侧边栏
       loadSidebar: true,
-      //文档名称
-      name: '7 Habit',
       //开启标题的锚点
       auto2top: true,
       //主题颜色
@@ -86,18 +87,10 @@
   <script src="style/docsify-pagination.min.js"></script>
   <!-- 文档页脚 -->
   <script src="style/docsify-footer.min.js"></script>
-  <!-- PWA 离线缓存 -->
-  <script>
-    if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('sw.js')
-    }
-  </script>
+
   <!-- 置顶插件 -->
   <script src="style/jquery-1.11.3.min.js"></script>
-  <script src="style/jquery.toTop.min.js"></script>
-  <script>
-    $('.to-top').toTop();
-  </script>
+
   <!-- Markdown 引用样式美化 -->
   <script src="style/docsify-plugin-flexible-alerts.min.js"></script>
   <!-- 图片缩放 -->
