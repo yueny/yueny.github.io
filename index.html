@@ -19,8 +19,7 @@
 
 </head>
 
-<body background=""
-      style="background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+<body style="background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
 
   <div id="app">Loading...</div>
 
@@ -30,6 +29,7 @@
     window.$docsify = {
       el: '#app',
       name: 'database-pdfs',
+      nameLink: '/',
       repo: 'https://github.com/yueny/database-pdfs',
       loadNavbar: true, //开启导航栏
       coverpage: true,  //开启封面
@@ -38,7 +38,8 @@
       subMaxLevel: 2,   //目录最大级数
       maxLevel: 4,      //可配置最大支持渲染的标题层级
       homepage: 'zh-cn/README.md', //设置中文的README.md作为首页
-      // basePath: '',
+      basePath: '/',
+      routerMode: 'history',
       
       //添加搜索功能，中文和英文文档同时搜索
       search: {
