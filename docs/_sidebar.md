@@ -7,7 +7,7 @@
   - [论文](zh-cn/Database/07_paper/README.md)
   - [书籍](zh-cn/Database/10_books/README.md)
   - 优化器
-  - 业务最佳优化实践
+  - [业务最佳优化实践](zh-cn/Database/08_optimizer/README.md)
 
 - Redis
   - [Why is Redis so fast](zh-cn/Redis/README.md)

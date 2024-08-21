@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Wholsy</title>
-  <link rel="icon" href="style/favicon.ico" />
+  <link rel="icon" href="_media/favicon.ico" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="keywords" content="doc,docs,documentation,gitbook,creator,generator,github,jekyll,github-pages"/>
@@ -17,18 +17,48 @@
   <!-- theme -->
   <!-- 主题一 - 默认主题 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <link rel="stylesheet" href="https://s.codealy.com/whosly/s/prism/1.29.0/prism-all-themes-default.mini.css">
+  <!-- 主题二 - docsify-themeable defaults 主题 -->
+  <!--  <link rel="stylesheet" data-style-group="themeable"-->
+  <!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"-->
+  <!--  />-->
+  <!-- 主题三 - docsify-themeable dark 主题 -->
+  <!--  <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: dark)"-->
+  <!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"-->
+  <!--  />-->
+  <!--  <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: light)"-->
+  <!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"-->
+  <!--  />-->
 
-  <link rel="stylesheet" type="text/css" href="style/myStyle.css"/>
+  <link rel="stylesheet" href="https://s.codealy.com/whosly/s/prism/1.29.0/prism-all-themes-default.mini.css">
+  <!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />-->
+  <!--  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css" />-->
+
+  <link rel="stylesheet" type="text/css" href="_media/css/myStyle.css"/>
 
   <!-- alert -->
   <link rel="stylesheet" href="//cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css" type='text/css' media='all' />
 
   <script src="https://s.codealy.com/whosly/s/js/jQuery/jquery-3.6.0.min.js"></script>
-<!--  <script src="style/jquery-1.11.3.min.js"></script>-->
+<!--  <script src="_media/js/jquery-1.11.3.min.js"></script>-->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script src="_media/js/site.js"></script>
+  <meta name="referrer" content="same-origin">
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    // gtag('config', 'G-');
+  </script>
 </head>
 
 <body style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+
+<!--  <img src="/_media/head.jpg"-->
+<!--       style="top: 2%; position: absolute; left: 30%; z-index: -1; height: 100px; width: 50%"-->
+<!--       alt="logo"/>-->
 
   <div id="app">Loading...</div>
 
@@ -64,22 +94,37 @@
         'cache-control': 'max-age=600',
       },
 
+      // PLUGINS
+      // -----------------------------------------------------------------
+      // Execute the script on the page.
+      // Only parses the first script tag (demo). If Vue is detected, this is true by default.
+      executeScript: true,
       // 添加搜索功能，中文和英文文档同时搜索
       search: {
         paths: 'auto',
-        placeholder: {
-          '/':'🔍 搜索',
-          '/zh-cn/':'🔍 搜索',
-          '/en-us/':'🔍 Type to search'
-        },
         //如果中文和英文文档都没有内容，则返回
         noData: {
-          '/':'😒 找不到结果',
-          '/zh-cn/':'😒 找不到结果',
-          '/en-us/':'😒 No Results'
+          '/': '😒 No results!',
+          '/zh-cn/': '😒 找不到结果!',
+          '/en-us/': '😒 No results!',
+          '/es/': '¡No hay resultados!',
+          '/de-de/': 'Keine Ergebnisse!',
+          '/ru-ru/': 'Никаких результатов!',
         },
-        depth: 4,         //搜索标题的最大层级
+        placeholder: {
+          '/': '🔍 Search...',
+          '/zh-cn/': '🔍 搜索',
+          '/en-us/': '🔍 Type to search',
+          '/es/': 'Buscar',
+          '/de-de/': 'Suche',
+          '/ru-ru/': 'Поиск',
+        },
+        pathNamespaces: ['/es', '/zh-cn', '/en-us/', '/de-de', '/ru-ru'],
+        //搜索标题的最大层级
+        depth: 4,
         maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        hideOtherSidebarContent: false,
+        namespace: 'whosly-Guide',
       },
       pagination: {
         previousText: '上一篇',
@@ -87,11 +132,25 @@
         crossChapter: true,
         crossChapterText: false,
       },
+      count:{
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese'
+      },
       footer: {
         copy: 'Copyright &copy; 2024 💖 </span>',
         auth: ' <strong>-沐沐-</strong>',
         pre: '<hr/>',
         style: 'text-align: center;',
+      },
+      plantuml: {
+        skin: "default",
+      },
+      toc: {
+        scope: ".markdown-section",
+        headings: "h1, h2, h3, h4, h5, h6",
+        title: "Table of Contents",
       },
       copyCode: {
           buttonText: 'Copy',
@@ -122,6 +181,11 @@
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
   <!--<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>-->
 
+  <!-- themeable -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-ethicalads@1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
+
   <!-- 一键复制插件, 在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
   <!--  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>-->
@@ -142,7 +206,7 @@
 <!--  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>-->
 <!--  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-properties.min.js"></script>-->
 <!--  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-matlab.js"></script>-->
-  
+
   <!-- CDN files for docsify-katex -->
   <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
   
@@ -158,10 +222,15 @@
         "success"); };
   </script>
 
+  <script src="https://unpkg.com/docsify/lib/plugins/ga.min.js"></script>
+  <script src="https://unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
+  <!-- <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script> -->
+  <script src="https://unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
   <!-- PWA 离线化 -->
   <script>
     if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('sw.js')
+      navigator.serviceWorker.register('_media/js/sw.js')
     }
   </script>
   
@@ -169,14 +238,13 @@
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   <!-- 置顶插件 -->
-  <script src="style/jquery.toTop.min.js"></script>
+  <script src="_media/js/jquery.toTop.min.js"></script>
   <script>
     $('.to-top').toTop();
   </script>
 
   <!-- Markdown 引用样式美化 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts/dist/docsify-plugin-flexible-alerts.min.js"></script>
-
 
 </body>
 </html>

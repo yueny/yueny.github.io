@@ -1,4 +1,4 @@
-<img width="160px" style="border-radius: 50%" bor src="style/hot.jpg">
+<img width="160px" style="border-radius: 50%" bor src="_media/hot.jpg">
 
 
 # Database_Series <small>1.0.0</small>
@@ -15,6 +15,6 @@
 [Get Started](README.md)
 [Twiter](/)
 
-![](style/bg.jpg)
+![](_media/bg.jpg)
 
 
