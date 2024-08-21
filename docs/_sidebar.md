@@ -14,6 +14,7 @@
 
 - Rust
   - [Getting started](zh-cn/Rust/README.md)
+  - [宏](zh-cn/Rust/Rust_Macro.md)
 
 - C++
     - [基础](zh-cn/C++/base.md)
