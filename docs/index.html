@@ -17,6 +17,7 @@
   <!-- theme -->
   <!-- 主题一 - 默认主题 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+<!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/pure.css">-->
   <!-- 主题二 - docsify-themeable defaults 主题 -->
   <!--  <link rel="stylesheet" data-style-group="themeable"-->
   <!--        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"-->
@@ -73,7 +74,9 @@
       repo: 'https://doc.rszone.me/',
       homepage: 'README.md', //设置中文的README.md作为首页
       // 封面配置文件。多个封面页，并指定文件名
+      // coverpage: ['/', '/zh-cn/']
       coverpage: true,
+      onlyCover: true,
       // 默认加载 _sidebar.md，作为侧边栏
       loadSidebar: true,
 
@@ -92,6 +95,10 @@
       requestHeaders: {
         'x-token': 'whosly',
         'cache-control': 'max-age=600',
+      },
+      // 配置alias字段后，所有页面都会显示项目根目录_sidebar.md文件的配置作为侧边栏，子目录的_sidebar.md文件会失效。
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
       },
 
       // PLUGINS
