@@ -1,38 +1,23 @@
-## English Documentation
-This is an English Documentation
+# Algorithm-pdf
 
-Read Online
----
+## Introduction
 
--  **[Gitee Online](https://mochazi.gitee.io/docsify-demo)** | [Gitee address](https://gitee.com/mochazi/docsify-demo)
--  **[GitHub Online](https://mochazi.github.io/docsify-demo)** | [GitHub address](https://github.com/mochazi/docsify-demo)
+I collect these awesome materials here to review them from time to time.
+I think it will be helpful to those who share the same interests as me.
 
-## Write a warning
-> [!WARNING]
-> Write `!WARNING` in`[]`
->
-> This is a warning to beautify the plug-in using the markdown reference style
+From [whosly/database-pdfs](https://gitee.com/whosly/database-pdfs)
 
-## Writing a danger
-> [!Danger]
-> Write `!Danger` in`[]`
->
-> This is a danger to beautify the plug-in using the markdown reference style
+![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
+![](https://parg.co/bDm)
 
-## Writing a tip
-> [!TIP]
-> Write `!TIP` in`[]`
->
-> This is a tip to beautify the plug-in using the markdown reference style
+# Awesome Database Development
 
-## Writing a note
-> [!NOTE]
-> Write `!NOTE` in`[]`
->
-> This is a note to beautify the plug-in using the markdown reference style
+Database development is interesting and challenging.
+You can always find interesting things to learn and challenging problems to solve.
+You need to know a lot of things and get them right to build a reliable and high-performance database.
+And it takes time, a lot of time, to think and practice.   [Database](zh-cn/Database/README.md)
 
-## Writing custom warnings
-> [!WARNING|label:Important]
-> Write `!WARNING|label:Important` in`[]`
->
-> The same goes for `Danger`，`TIP`，`NOTE`，` label:xxx `Implement customization
+![image.png](zh-cn/assets/Database/global.png)
+
+
+# Linux kernel
