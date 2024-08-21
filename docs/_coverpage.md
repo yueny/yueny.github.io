@@ -13,7 +13,6 @@
 
 
 [Get Started](README.md)
-[GitHub](https://github.com/yueny/yueny.github.io)
 [Twiter](/)
 
 ![](style/bg.jpg)
