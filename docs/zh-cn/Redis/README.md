@@ -7,7 +7,7 @@ Redis 与 其他 key - value 缓存产品有以下三个特点：
 
 ## Why is Redis so fast
 
-![Why is Redis so fast?](../assets/Redis/Why_is_Redis_so_fast.png)
+![Why is Redis so fast?](../../_media/assets/Redis/Why_is_Redis_so_fast.png)
 
 - Redis 是一个基于 RAM 的数据库。RAM 访问比随机磁盘访问至少快 1000 倍。
 - Redis 利用 IO 复用和单线程执行循环来提高执行效率。
@@ -22,7 +22,7 @@ Redis Cluster 采用数据分片机制，定义了 16384个 Slot槽位，集群�
 然而，CRC16算法产生的hash值有16bit，该算法可以产生2^16-=65536个值。 换句话说，值是分布在0~65535之间。
 那在做mod运算的时候，为什么不mod 65536，而选择mod 16384？
 
-![redis_slot_16384](../assets/Redis/redis_slot_16384.jpg)
+![redis_slot_16384](../../_media/assets/Redis/redis_slot_16384.jpg)
 
 这个问题，作者给出了回答， 地址如下: [https://github.com/antirez/redis/issues/2576](https://github.com/antirez/redis/issues/2576)。
 
