@@ -1,4 +1,4 @@
-<img width="160px" style="border-radius: 50%" bor src="_media/hot.jpg">
+<img width="160px" style="border-radius: 50%" bor src="https://i.codealy.com/logo/hot-air.jpg">
 
 
 # Database_Series <small>1.0.0</small>
@@ -16,5 +16,5 @@
 [Twiter](/)
 
 <!-- 背景图片 -->
-![](_media/bg.jpg)
+![](https://i.codealy.com/art/Bridges_and_rivers_smaller.jpg)
 
