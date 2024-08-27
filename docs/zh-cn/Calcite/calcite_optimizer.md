@@ -68,9 +68,14 @@ SQL 解析、SQL 校验、SQL 优化，继而形成物理计划。
 ![sql_trival](../../_media/assets/Calcite/optimizer/sql_trival.webp)
 
 如上图所示，一条 SQL 整体处理流程分为以下几个步骤：
-1. 当 Client 层发起一条 SQL 请求时，请求会到 JDBC Server 端，JDBC Server 端底层一般可以是 GRPC 服务或者 HTTP 服务，在 Calcite 中，也可以使用 Calcite Avatica 来做 JDBC 服务端和 Driver 层的代码开发。
-2. 服务端接收到 SQL 请求后，会在内部构建出一个 Job 作业请求，同时提交到内部作业服务，之后会进入到 SQL 链路处理流程中。
-3. 在 SQL 处理流程中，第一步则是将 SQL 解析成一棵 SqlNode 的 AST 抽象语法树，这个过程中会做 SQL 词法和语法的校验。之后会进入到 SQL 验证阶段，SQL 验证阶段主要对 SQL 的语义进行验证，比如查询的数据表是否存在、函数是否存在、函数参数数据类型是否匹配等等。元数据验证完之后，其输出本质还是一棵 SqlNode Tree，接下来会将 SqlNode Tree 转换为一棵 RelNode 关系代数 Tree，同时进入到 SQL 优化阶段。
-4. 在 Calcite 中，RBO 优化主要使用 HepPlanner 类来进行实现。CBO 优化，则是使用 VolcanoPlanner 来进行实现，RBO 规则和 CBO 规则都支持自定义扩展。
-5. 经过 SQL 优化器的优化，会产出最优的物理计划。但此时仍然无法最终运行，我们还需要将物理计划转化为底层计算引擎的 SQL 方言，才能进行作业的提交和计算。
+
+1、当 Client 层发起一条 SQL 请求时，请求会到 JDBC Server 端，JDBC Server 端底层一般可以是 GRPC 服务或者 HTTP 服务，在 Calcite 中，也可以使用 Calcite Avatica 来做 JDBC 服务端和 Driver 层的代码开发。
+
+2、服务端接收到 SQL 请求后，会在内部构建出一个 Job 作业请求，同时提交到内部作业服务，之后会进入到 SQL 链路处理流程中。
+
+3、在 SQL 处理流程中，第一步则是将 SQL 解析成一棵 SqlNode 的 AST 抽象语法树，这个过程中会做 SQL 词法和语法的校验。之后会进入到 SQL 验证阶段，SQL 验证阶段主要对 SQL 的语义进行验证，比如查询的数据表是否存在、函数是否存在、函数参数数据类型是否匹配等等。元数据验证完之后，其输出本质还是一棵 SqlNode Tree，接下来会将 SqlNode Tree 转换为一棵 RelNode 关系代数 Tree，同时进入到 SQL 优化阶段。
+
+4、在 Calcite 中，RBO 优化主要使用 HepPlanner 类来进行实现。CBO 优化，则是使用 VolcanoPlanner 来进行实现，RBO 规则和 CBO 规则都支持自定义扩展。
+
+5、经过 SQL 优化器的优化，会产出最优的物理计划。但此时仍然无法最终运行，我们还需要将物理计划转化为底层计算引擎的 SQL 方言，才能进行作业的提交和计算。
 

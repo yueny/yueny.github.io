@@ -18,8 +18,7 @@
   - [Calcite 框架](zh-cn/Calcite/calcite_about.md)
   - [Calcite 查询优化器](zh-cn/Calcite/calcite_optimizer.md)
   - [Calcite SQL 解析器原理](zh-cn/Calcite/calcite_parser.md)
-
-[//]: # (  - [Calcite SQL 解析器并扩展其语法实现]&#40;zh-cn/Calcite/calcite_parser_JJ.md&#41;)
+  - [Calcite SQL 解析器并扩展其语法实现](zh-cn/Calcite/calcite_parser_JJ.md)
 
 - Redis
   - [Why is Redis so fast](zh-cn/Redis/README.md)
