@@ -43,6 +43,7 @@ Calcite 优化规则模块，Calcite 主要有：Transformation Rule（逻辑优
 同时可以通过扩展 RelOptRule 、BuiltInMetadata 的实现，来自定义 SQL 优化器的逻辑。
 
 下图是 Calcite 底层核心代码调用流转示意图：
+
 ![calcite_sql_run](../../_media/assets/Calcite/about/calcite_sql_run.webp)
 
 # Calcite 组成
@@ -64,4 +65,5 @@ Parser.jj 是一个 Calcite 核心的语法和词法文件，基于 Apache FreeM
 该文件是 FMPP 的配置文件，提供了 SQL 语句、literals、dataType 的接口扩展入口
 
 语法解析整体流程如下图所示：
+
 ![sql_parser](../../_media/assets/Calcite/about/sql_parser.webp)

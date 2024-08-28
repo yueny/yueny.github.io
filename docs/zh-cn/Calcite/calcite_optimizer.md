@@ -6,6 +6,7 @@ RBO 主要是使用一些预定义的先验且有收益的优化规则集合，�
 
 ## RBO
 以谓词下推优化举例：
+
 ![pre_down](../../_media/assets/Calcite/optimizer/pre_down.webp)
 
 上图左边是原始 SQL 计划，可以看到，通过 Filter 谓词下推规则优化后，
@@ -22,6 +23,7 @@ CBO 优化，则是在期望的物理特质下，通过对不同物理计划运�
 一般 Cost 包括：CPU、内存、磁盘 IO、网络 IO 等等。
 
 以 Group By（聚合） 下推举例：
+
 ![cbo_group_by](../../_media/assets/Calcite/optimizer/cbo_group_by.webp)
 
 在上图中，如果 LogicalJoin 之后的基数（输出的行数）如果比 LogicalTableScan[A] 后的基数要小的话，
@@ -65,6 +67,7 @@ SQL 解析、SQL 校验、SQL 优化，继而形成物理计划。
 可以将物理计划翻译成对应引擎的 SQL 方言，然后提交到对应引擎执行。
 
 我们通过一个流程图，来展开介绍一条 SQL 在 Apache Calcite 是如何完成解析、优化与改写的。
+
 ![sql_trival](../../_media/assets/Calcite/optimizer/sql_trival.webp)
 
 如上图所示，一条 SQL 整体处理流程分为以下几个步骤：
